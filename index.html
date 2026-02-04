@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Location de villas d'exception à l'Île Maurice. Découvrez le Nord, le Sud, l'Est et l'Ouest de Maurice. Activités : hélicoptère, catamaran, quad, tyroliennes. Service premium 24/7." />
+  <meta name="keywords" content="villa maurice, location villa ile maurice, grand baie, flic en flac, le morne, belle mare, activités maurice, excursions maurice" />
+  <meta name="author" content="Travel With Us" />
+  <meta name="robots" content="index, follow" />
+  
+  <title>Travel With Us - Villas de Luxe Île Maurice | Nord, Sud, Est, Ouest | Activités & Excursions</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/Logo.webp" type="image/webp" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  
+  <!-- =================== HEADER =================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      
+      <!-- Logo -->
+      <a class="brand" href="#home" aria-label="Travel With Us - Accueil">
+        <img src="./assets/images/Logo.webp" alt="Travel With Us" class="logo" />
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav-main" aria-label="Navigation principale">
+        <a href="#villas" data-translate="menu_villas">Nos Villas</a>
+        <a href="#destinations" data-translate="menu_destinations">Destinations</a>
+        <a href="#activites" data-translate="menu_activities">Activités</a>
+        <a href="#about" data-translate="menu_about">À propos</a>
+        <a href="#contact" data-translate="menu_contact">Contact</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        
+        <!-- Email -->
+        <a href="mailto:contact@ouiitravel.com" class="btn-header-icon" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        
+        <!-- WhatsApp -->
+        <a href="https://wa.me/23055122352" class="btn-header-whatsapp" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Langue -->
+        <div class="header-dropdown" id="languageDropdown">
+          <button class="header-dropdown-btn" id="languageBtn">
+            <span class="flag-emoji" id="selectedFlag">🇫🇷</span>
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </button>
+          <div class="header-dropdown-menu">
+            <button class="header-dropdown-item active" data-lang="fr" data-flag="🇫🇷">
+              <span class="flag-emoji">🇫🇷</span>
+              <span class="item-label">Français</span>
+            </button>
+            <button class="header-dropdown-item" data-lang="en" data-flag="🇬🇧">
+              <span class="flag-emoji">🇬🇧</span>
+              <span class="item-label">English</span>
+            </button>
+            <button class="header-dropdown-item" data-lang="de" data-flag="🇩🇪">
+              <span class="flag-emoji">🇩🇪</span>
+              <span class="item-label">Deutsch</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile toggle -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="#villas" data-translate="menu_villas"><i class="fas fa-home"></i> Nos Villas</a>
+      <a href="#destinations" data-translate="menu_destinations"><i class="fas fa-map-marked-alt"></i> Destinations</a>
+      <a href="#activites" data-translate="menu_activities"><i class="fas fa-umbrella-beach"></i> Activités</a>
+      <a href="#about" data-translate="menu_about"><i class="fas fa-info-circle"></i> À propos</a>
+      <a href="#contact" data-translate="menu_contact"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="https://wa.me/23055122352" class="mobile-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="dropdown-overlay" id="dropdownOverlay"></div>
+
+  <!-- WhatsApp flottant -->
+  <a href="https://wa.me/23055122352" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- =================== HERO =================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    
+    <div class="container">
+      <div class="hero-content-center">
+        
+        <div class="hero-badge">
+          <i class="fas fa-star"></i> 
+          <span data-translate="hero_badge">Plus de 150 villas d'exception à l'Île Maurice</span>
+        </div>
+        
+        <h1 data-translate="hero_title">Votre Villa de Rêve à l'Île Maurice</h1>
+        
+        <p class="hero-subtitle" data-translate="hero_subtitle">
+          Découvrez nos villas d'exception avec piscine privée, vue sur mer et service premium dans les plus belles régions de Maurice.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#villas" class="btn-hero-primary">
+            <i class="fas fa-home"></i>
+            <span data-translate="cta_discover">Découvrir nos Villas</span>
+          </a>
+          <a href="https://wa.me/23055122352" class="btn-hero-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span data-translate="cta_whatsapp">WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- =================== SÉPARATEUR =================== -->
+  <div class="section-divider"></div>
+
+  <!-- =================== 3 ÉTAPES =================== -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-translate="steps_title">Réservez en 3 Étapes</h2>
+        <p class="section-subtitle" data-translate="steps_subtitle">Un processus simple et rapide pour votre séjour de rêve</p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <div class="step-number">1</div>
+          <h3 data-translate="step1_title">Recherchez</h3>
+          <p data-translate="step1_text">Parcourez notre catalogue de villas à Maurice. Choisissez votre destination : Nord, Sud, Est ou Ouest.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">2</div>
+          <h3 data-translate="step2_title">Contactez-nous</h3>
+          <p data-translate="step2_text">Cliquez sur WhatsApp ou Email. Notre équipe locale vous répond en quelques minutes avec un devis personnalisé.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">3</div>
+          <h3 data-translate="step3_title">Confirmez</h3>
+          <p data-translate="step3_text">Recevez votre confirmation avec tous les détails et profitez de votre séjour avec notre conciergerie 24/7.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== SÉPARATEUR =================== -->
+  <div class="section-divider"></div>
+
+  <!-- =================== NOS VILLAS =================== -->
+  <section class="villas-section" id="villas">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-translate="villas_title">Nos Villas d'Exception</h2>
+        <p class="section-subtitle" data-translate="villas_subtitle">Sélection des meilleures villas dans toutes les régions de Maurice</p>
+      </div>
+
+      <div class="villa-grid">
+        
+        <!-- VILLA 1 -->
+        <article class="villa-card">
+          <div class="vc-media">
+            <img src="./assets/images/villa1.jpg" alt="Villa Lagon I Grand Baie Nord Maurice" loading="lazy" />
+            <span class="vc-badge vc-badge-north">Nord</span>
+          </div>
+          <div class="vc-body">
+            <h3 class="vc-title">Villa Lagon I</h3>
+            <div class="vc-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Grand Baie, Nord</span>
+            </div>
+            <ul class="vc-specs">
+              <li><i class="fas fa-expand"></i> 120 m²</li>
+              <li><i class="fas fa-users"></i> 6 <span data-translate="spec_guests">voyageurs</span></li>
+              <li><i class="fas fa-bed"></i> 3 <span data-translate="spec_bedrooms">chambres</span></li>
+              <li><i class="fas fa-bath"></i> 2 sdb</li>
+            </ul>
+            <a href="https://wa.me/23055122352?text=Villa%20Lagon%20I%20-%20Grand%20Baie" class="btn-villa-contact" target="_blank">
+              <i class="fab fa-whatsapp"></i> 
+              <span data-translate="btn_contact">Contactez-nous</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- VILLA 2 -->
+        <article class="villa-card">
+          <div class="vc-media">
+            <img src="./assets/images/villa2.jpg" alt="Villa Lagon II Flic-en-Flac Ouest Maurice" loading="lazy" />
+            <span class="vc-badge vc-badge-west">Ouest</span>
+          </div>
+          <div class="vc-body">
+            <h3 class="vc-title">Villa Lagon II</h3>
+            <div class="vc-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Flic-en-Flac, Ouest</span>
+            </div>
+            <ul class="vc-specs">
+              <li><i class="fas fa-expand"></i> 95 m²</li>
+              <li><i class="fas fa-users"></i> 5 <span data-translate="spec_guests">voyageurs</span></li>
+              <li><i class="fas fa-bed"></i> 2 <span data-translate="spec_bedrooms">chambres</span></li>
+              <li><i class="fas fa-bath"></i> 2 sdb</li>
+            </ul>
+            <a href="https://wa.me/23055122352?text=Villa%20Lagon%20II%20-%20Flic-en-Flac" class="btn-villa-contact" target="_blank">
+              <i class="fab fa-whatsapp"></i> 
+              <span data-translate="btn_contact">Contactez-nous</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- VILLA 3 -->
+        <article class="villa-card">
+          <div class="vc-media">
+            <img src="./assets/images/villa3.jpg" alt="Villa Lagon III Grand Baie Nord Maurice" loading="lazy" />
+            <span class="vc-badge vc-badge-north">Nord</span>
+          </div>
+          <div class="vc-body">
+            <h3 class="vc-title">Villa Lagon III</h3>
+            <div class="vc-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Grand Baie, Nord</span>
+            </div>
+            <ul class="vc-specs">
+              <li><i class="fas fa-expand"></i> 120 m²</li>
+              <li><i class="fas fa-users"></i> 6 <span data-translate="spec_guests">voyageurs</span></li>
+              <li><i class="fas fa-bed"></i> 3 <span data-translate="spec_bedrooms">chambres</span></li>
+              <li><i class="fas fa-bath"></i> 2 sdb</li>
+            </ul>
+            <a href="https://wa.me/23055122352?text=Villa%20Lagon%20III%20-%20Grand%20Baie" class="btn-villa-contact" target="_blank">
+              <i class="fab fa-whatsapp"></i> 
+              <span data-translate="btn_contact">Contactez-nous</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- VILLA 4 -->
+        <article class="villa-card">
+          <div class="vc-media">
+            <img src="./assets/images/villa4.jpg" alt="Villa Lagon IV Flic-en-Flac Ouest Maurice" loading="lazy" />
+            <span class="vc-badge vc-badge-west">Ouest</span>
+          </div>
+          <div class="vc-body">
+            <h3 class="vc-title">Villa Lagon IV</h3>
+            <div class="vc-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Flic-en-Flac, Ouest</span>
+            </div>
+            <ul class="vc-specs">
+              <li><i class="fas fa-expand"></i> 95 m²</li>
+              <li><i class="fas fa-users"></i> 5 <span data-translate="spec_guests">voyageurs</span></li>
+              <li><i class="fas fa-bed"></i> 2 <span data-translate="spec_bedrooms">chambres</span></li>
+              <li><i class="fas fa-bath"></i> 2 sdb</li>
+            </ul>
+            <a href="https://wa.me/23055122352?text=Villa%20Lagon%20IV%20-%20Flic-en-Flac" class="btn-villa-contact" target="_blank">
+              <i class="fab fa-whatsapp"></i> 
+              <span data-translate="btn_contact">Contactez-nous</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- VILLA 5 -->
+        <article class="villa-card">
+          <div class="vc-media">
+            <img src="./assets/images/villa5.jpg" alt="Villa Lagon V Belle Mare Est Maurice" loading="lazy" />
+            <span class="vc-badge vc-badge-east">Est</span>
+          </div>
+          <div class="vc-body">
+            <h3 class="vc-title">Villa Lagon V</h3>
+            <div class="vc-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Belle Mare, Est</span>
+            </div>
+            <ul class="vc-specs">
+              <li><i class="fas fa-expand"></i> 150 m²</li>
+              <li><i class="fas fa-users"></i> 8 <span data-translate="spec_guests">voyageurs</span></li>
+              <li><i class="fas fa-bed"></i> 4 <span data-translate="spec_bedrooms">chambres</span></li>
+              <li><i class="fas fa-bath"></i> 3 sdb</li>
+            </ul>
+            <a href="https://wa.me/23055122352?text=Villa%20Lagon%20V%20-%20Belle%20Mare" class="btn-villa-contact" target="_blank">
+              <i class="fab fa-whatsapp"></i> 
+              <span data-translate="btn_contact">Contactez-nous</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- VILLA 6 -->
+        <article class="villa-card">
+          <div class="vc-media">
+            <img src="./assets/images/villa6.jpg" alt="Villa Lagon VI Le Morne Sud Maurice" loading="lazy" />
+            <span class="vc-badge vc-badge-south">Sud</span>
+          </div>
+          <div class="vc-body">
+            <h3 class="vc-title">Villa Lagon VI</h3>
+            <div class="vc-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Le Morne, Sud</span>
+            </div>
+            <ul class="vc-specs">
+              <li><i class="fas fa-expand"></i> 180 m²</li>
+              <li><i class="fas fa-users"></i> 10 <span data-translate="spec_guests">voyageurs</span></li>
+              <li><i class="fas fa-bed"></i> 5 <span data-translate="spec_bedrooms">chambres</span></li>
+              <li><i class="fas fa-bath"></i> 4 sdb</li>
+            </ul>
+            <a href="https://wa.me/23055122352?text=Villa%20Lagon%20VI%20-%20Le%20Morne" class="btn-villa-contact" target="_blank">
+              <i class="fab fa-whatsapp"></i> 
+              <span data-translate="btn_contact">Contactez-nous</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== SÉPARATEUR =================== -->
+  <div class="section-divider"></div>
+
+  <!-- =================== DESTINATIONS =================== -->
+  <section class="destinations-section" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-translate="dest_main_title">Découvrez les Régions de l'Île Maurice</h2>
+        <p class="section-subtitle" data-translate="dest_main_subtitle">Quatre destinations uniques, chacune avec son charme et ses avantages</p>
+      </div>
+
+      <div class="destinations-container">
+        
+        <!-- NORD -->
+       <article class="destination-overlay" style="background-image: url('./assets/images/Le Nord - Animation & Vie Nocturne.jpg');">
+          <div class="dest-overlay-gradient"></div>
+          <div class="dest-overlay-content">
+            <span class="dest-badge dest-badge-north">Nord</span>
+            <h3 data-translate="dest_north_title">Le Nord - Animation & Vie Nocturne</h3>
+            <p class="dest-location">Grand Baie • Pereybère • Cap Malheureux</p>
+            <p class="dest-intro" data-translate="dest_north_intro">Le cœur touristique de Maurice où l'animation rencontre les plages paradisiaques.</p>
+            <ul class="dest-advantages">
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_north_adv1">Plages de sable blanc et lagon turquoise</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_north_adv2">Restaurants, bars et vie nocturne animée</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_north_adv4">Shopping et centres commerciaux à proximité</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_north_adv5">Accès facile aux îles du Nord en catamaran</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- SUD -->
+        <article class="destination-overlay" style="background-image: url('./assets/images/Le Sud-Nature Sauvage & Authenticité.jpg');">
+          <div class="dest-overlay-gradient"></div>
+          <div class="dest-overlay-content">
+            <span class="dest-badge dest-badge-south">Sud</span>
+            <h3 data-translate="dest_south_title">Le Sud - Nature Sauvage & Authenticité</h3>
+            <p class="dest-location">Le Morne • Souillac • Bel Ombre</p>
+            <p class="dest-intro" data-translate="dest_south_intro">Une région préservée où la nature majestueuse rencontre l'histoire mauricienne.</p>
+            <ul class="dest-advantages">
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_south_adv1">Le Morne Brabant, site UNESCO et spot de kitesurf mondial</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_south_adv2">Paysages spectaculaires : montagnes, falaises, cascades</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_south_adv3">Authenticité mauricienne loin du tourisme de masse</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_south_adv4">Plages sauvages et lagons préservés</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_south_adv5">Proximité de Chamarel et la Terre des 7 Couleurs</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- EST -->
+        <article class="destination-overlay" style="background-image: url('./assets/images/LEST.png');">
+          <div class="dest-overlay-gradient"></div>
+          <div class="dest-overlay-content">
+            <span class="dest-badge dest-badge-east">Est</span>
+            <h3 data-translate="dest_east_title">L'Est - Plages de Rêve & Tranquillité</h3>
+            <p class="dest-location">Belle Mare • Trou d'Eau Douce • Île aux Cerfs</p>
+            <p class="dest-intro" data-translate="dest_east_intro">Les plus belles plages de Maurice avec un lagon aux eaux cristallines.</p>
+            <ul class="dest-advantages">
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_east_adv1">Plages de carte postale avec sable blanc immaculé</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_east_adv2">Île aux Cerfs accessible en bateau, paradis tropical</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_east_adv3">Lagon idéal pour snorkeling et plongée</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_east_adv4">Resorts et spas de luxe internationaux</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_east_adv5">Ambiance calme et reposante, parfait pour se ressourcer</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- OUEST -->
+        <article class="destination-overlay" style="background-image: url('https://images.unsplash.com/photo-1540202404-d0c7fe46a087?w=1200');">
+          <div class="dest-overlay-gradient"></div>
+          <div class="dest-overlay-content">
+            <span class="dest-badge dest-badge-west">Ouest</span>
+            <h3 data-translate="dest_west_title">L'Ouest - Couchers de Soleil & Vie Locale</h3>
+            <p class="dest-location">Flic-en-Flac • Tamarin • Rivière Noire</p>
+            <p class="dest-intro" data-translate="dest_west_intro">Des couchers de soleil spectaculaires dans une ambiance authentique et décontractée.</p>
+            <ul class="dest-advantages">
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_west_adv1">Couchers de soleil parmi les plus beaux au monde</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_west_adv2">Proximité de Port-Louis, la capitale animée (20 min)</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_west_adv3">Plongée exceptionnelle : épaves, récifs, grottes</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_west_adv4">Pêche au gros à Rivière Noire, capitale mondiale</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-translate="dest_west_adv5">Ambiance locale authentique et prix attractifs</span></li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== SÉPARATEUR =================== -->
+  <div class="section-divider"></div>
+
+  <!-- =================== ACTIVITÉS =================== -->
+  <section class="activities-section" id="activites">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-translate="activities_main_title">Activités & Excursions à Maurice</h2>
+        <p class="section-subtitle" data-translate="activities_main_subtitle">Des expériences inoubliables pour rendre votre séjour unique</p>
+      </div>
+
+      <div class="activities-grid">
+  
+  <!-- Hélicoptère -->
+  <article class="activity-card">
+    <div class="activity-image" style="background-image: url('./assets/images/Tour en Hélicoptère.jpg');"></div>
+    <div class="activity-content">
+      <div class="activity-icon activity-icon-red">
+        <i class="fas fa-helicopter"></i>
+      </div>
+      <h3 data-translate="activity_heli_title">Tour en Hélicoptère</h3>
+      <p data-translate="activity_heli_desc">Survolez Maurice et admirez le lagon turquoise, les chutes sous-marines du sud et le Morne Brabant depuis le ciel. Une perspective unique et spectaculaire de l'île.</p>
+    </div>
+  </article>
+
+  <!-- Hydravion -->
+  <article class="activity-card">
+    <div class="activity-image" style="background-image: url('./assets/images/Vol en Hydravion.jpg');"></div>
+    <div class="activity-content">
+      <div class="activity-icon activity-icon-blue">
+        <i class="fas fa-water"></i>
+      </div>
+      <h3 data-translate="activity_seaplane_title">Vol en Hydravion</h3>
+      <p data-translate="activity_seaplane_desc">Décollage et amerrissage sur le lagon pour une aventure unique. Découvrez les îlots du nord et les récifs coralliens dans un confort exceptionnel.</p>
+    </div>
+  </article>
+
+  <!-- Catamaran -->
+  <article class="activity-card">
+    <div class="activity-image" style="background-image: url('./assets/images/Croisière en Catamaran.jpg');"></div>
+    <div class="activity-content">
+      <div class="activity-icon activity-icon-teal">
+        <i class="fas fa-ship"></i>
+      </div>
+      <h3 data-translate="activity_catamaran_title">Croisière en Catamaran</h3>
+      <p data-translate="activity_catamaran_desc">Journée paradisiaque vers l'Île aux Cerfs ou les îles du Nord. Snorkeling, barbecue à bord et navigation sur les eaux cristallines. Inoubliable !</p>
+    </div>
+  </article>
+
+  <!-- Quad -->
+  <article class="activity-card">
+    <div class="activity-image" style="background-image: url('./assets/images/Safari en Quad.jpg');"></div>
+    <div class="activity-content">
+      <div class="activity-icon activity-icon-orange">
+        <i class="fas fa-person-biking"></i>
+      </div>
+      <h3 data-translate="activity_quad_title">Safari en Quad</h3>
+      <p data-translate="activity_quad_desc">Explorez les terres intérieures, plantations de canne à sucre et villages authentiques. Sensations fortes garanties sur des sentiers hors des sentiers battus.</p>
+    </div>
+  </article>
+
+  <!-- Tyroliennes -->
+  <article class="activity-card">
+    <div class="activity-image" style="background-image: url('./assets/images/Tyroliennes.jpg');"></div>
+    <div class="activity-content">
+      <div class="activity-icon activity-icon-green">
+        <i class="fas fa-wind"></i>
+      </div>
+      <h3 data-translate="activity_zipline_title">Tyroliennes & Aventure</h3>
+      <p data-translate="activity_zipline_desc">Volez au-dessus de la canopée mauricienne dans les parcs d'aventure. Tyroliennes géantes, ponts suspendus et sensations extrêmes au cœur de la nature.</p>
+    </div>
+  </article>
+
+  <!-- Plongée -->
+  <article class="activity-card">
+    <div class="activity-image" style="background-image: url('./assets/images/Plongée & Snorkeling.webp');"></div>
+    <div class="activity-content">
+      <div class="activity-icon activity-icon-purple">
+        <i class="fas fa-fish"></i>
+      </div>
+      <h3 data-translate="activity_diving_title">Plongée & Snorkeling</h3>
+      <p data-translate="activity_diving_desc">Explorez les récifs coralliens, épaves historiques et grottes sous-marines. Rencontrez tortues, raies et poissons tropicaux dans des eaux cristallines.</p>
+    </div>
+  </article>
+
+</div>
+  <!-- =================== SÉPARATEUR =================== -->
+  <div class="section-divider"></div>
+
+  <!-- =================== À PROPOS =================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      
+      <!-- Présentation Travel With Us -->
+      <div class="about-intro">
+        <div class="about-intro-content">
+          <span class="about-label" data-translate="about_label">Qui sommes-nous ?</span>
+          <h2 class="section-title" data-translate="about_company_title">Travel With Us - Votre Spécialiste Villas à Maurice</h2>
+          
+          <div class="about-text-blocks">
+            <p data-translate="about_p1">
+              Depuis 2018, <strong>Travel With Us</strong> est votre partenaire de confiance pour la <strong>location de villas de luxe à l'Île Maurice</strong>. Nous sélectionnons avec soin les plus belles propriétés de l'île dans les quatre régions : Nord animé, Sud sauvage, Est paradisiaque et Ouest authentique.
+            </p>
+            <p data-translate="about_p2">
+              Notre expertise locale nous permet de vous proposer des <strong>villas avec piscine privée</strong>, vue sur mer et services premium adaptés à tous les budgets. Que vous recherchiez une villa familiale à Grand Baie, une propriété romantique au Morne ou un havre de paix à Belle Mare, nous avons la villa parfaite pour vous.
+            </p>
+            <p data-translate="about_p3">
+              <strong>Équipe mauricienne disponible 24/7</strong>, nous vous accompagnons de A à Z : réservation simplifiée, conciergerie sur-mesure, activités et excursions, transferts aéroport. Notre mission ? Vous faire vivre des <strong>vacances inoubliables à l'Île Maurice</strong> en toute sérénité.
+            </p>
+          </div>
+
+          <div class="about-stats-compact">
+            <div class="stat-compact">
+              <div class="stat-number">150+</div>
+              <div class="stat-label" data-translate="stat_villas">Villas Premium</div>
+            </div>
+            <div class="stat-compact">
+              <div class="stat-number">2500+</div>
+              <div class="stat-label" data-translate="stat_clients">Clients Satisfaits</div>
+            </div>
+            <div class="stat-compact">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label" data-translate="stat_support">Support Local</div>
+            </div>
+            <div class="stat-compact">
+              <div class="stat-number">6</div>
+              <div class="stat-label" data-translate="stat_years">Ans d'Expertise</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pourquoi nous -->
+      <div class="why-us-section">
+        <div class="section-header">
+          <h2 class="section-title" data-translate="why_title">Pourquoi Travel With Us ?</h2>
+          <p class="section-subtitle" data-translate="why_subtitle">Les avantages qui font la différence</p>
+        </div>
+
+        <div class="features-grid">
+          
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3 data-translate="feature1_title">Paiement Sécurisé</h3>
+            <p data-translate="feature1_text">Transactions cryptées SSL et protection acheteur.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-tag"></i></div>
+            <h3 data-translate="feature2_title">Meilleur Prix Garanti</h3>
+            <p data-translate="feature2_text">Sans intermédiaire ni frais cachés.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-headset"></i></div>
+            <h3 data-translate="feature3_title">Support 24/7</h3>
+            <p data-translate="feature3_text">Équipe mauricienne disponible à tout moment.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+            <h3 data-translate="feature4_title">Villas Vérifiées</h3>
+            <p data-translate="feature4_text">Propriétés inspectées et certifiées.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-undo-alt"></i></div>
+            <h3 data-translate="feature5_title">Annulation Flexible</h3>
+            <p data-translate="feature5_text">Options adaptées à vos besoins.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fas fa-concierge-bell"></i></div>
+            <h3 data-translate="feature6_title">Conciergerie Premium</h3>
+            <p data-translate="feature6_text">Services personnalisés disponibles.</p>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================== SÉPARATEUR =================== -->
+  <div class="section-divider"></div>
+
+  <!-- =================== CONTACT =================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      
+      <div class="section-header">
+        <h2 class="section-title" data-translate="contact_title">Contactez-nous</h2>
+        <p class="section-subtitle" data-translate="contact_subtitle">Notre équipe locale est à votre écoute pour organiser votre séjour</p>
+      </div>
+
+      <div class="contact-wrapper">
+        
+        <!-- Infos contact -->
+        <div class="contact-info">
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="contact-text">
+              <h4 data-translate="contact_whatsapp_title">WhatsApp</h4>
+              <a href="https://wa.me/23055122352" target="_blank">+230 5512 2352</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4 data-translate="contact_email_title">Email</h4>
+              <a href="mailto:contact@ouiitravel.com">contact@ouiitravel.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-text">
+              <h4 data-translate="contact_hours_title">Horaires</h4>
+              <p data-translate="contact_hours_text">Lundi - Dimanche : 8h00 - 20h00</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Formulaire -->
+        <div class="contact-form-box">
+          <form id="contactForm">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName" data-translate="form_name">Nom complet *</label>
+                <input type="text" id="cName" name="name" required placeholder="Votre nom">
+              </div>
+              
+              <div class="form-group">
+                <label for="cEmail" data-translate="form_email">Email *</label>
+                <input type="email" id="cEmail" name="email" required placeholder="votre@email.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cPhone" data-translate="form_phone">Téléphone</label>
+                <input type="tel" id="cPhone" name="phone" placeholder="+230 5 234 5678">
+              </div>
+              
+              <div class="form-group">
+                <label for="cSubject" data-translate="form_subject">Sujet</label>
+                <select id="cSubject" name="subject">
+                  <option value="reservation" data-translate="subject_reservation">Réservation villa</option>
+                  <option value="info" data-translate="subject_info">Demande d'information</option>
+                  <option value="autre" data-translate="subject_other">Autre</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cMessage" data-translate="form_message">Message *</label>
+              <textarea id="cMessage" name="message" rows="5" required placeholder="Décrivez votre projet..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-contact-submit">
+              <i class="fas fa-paper-plane"></i>
+              <span data-translate="form_submit">Envoyer ma demande</span>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== SÉPARATEUR =================== -->
+  <div class="section-divider"></div>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      
+      <!-- Colonne 1 -->
+      <div class="footer-col">
+        <img src="./assets/images/Logo.webp" alt="Travel With Us" class="footer-logo" />
+        <p class="hashtag">#travelwithus</p>
+
+        <div class="footer-contact">
+          <h4 class="footer-title" data-translate="footer_contact">Contactez-nous</h4>
+          <a href="https://wa.me/23055122352" class="footer-link" target="_blank">
+            <i class="fab fa-whatsapp"></i> +230 5512 2352
+          </a>
+          <a href="mailto:contact@ouiitravel.com" class="footer-link">
+            <i class="fas fa-envelope"></i> contact@ouiitravel.com
+          </a>
+          <a href="tel:+23055122352" class="footer-link">
+            <i class="fas fa-phone"></i> +230 5512 2352
+          </a>
+        </div>
+
+        <ul class="socials">
+          <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne 2 -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-translate="footer_destinations">Destinations</h4>
+        <ul class="footer-links">
+          <li><a href="#destinations" data-translate="footer_north">Nord - Grand Baie</a></li>
+          <li><a href="#destinations" data-translate="footer_south">Sud - Le Morne</a></li>
+          <li><a href="#destinations" data-translate="footer_east">Est - Belle Mare</a></li>
+          <li><a href="#destinations" data-translate="footer_west">Ouest - Flic-en-Flac</a></li>
+          <li><a href="#villas" data-translate="footer_all_villas">Toutes nos villas</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne 3 -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-translate="footer_info">Informations</h4>
+        <ul class="footer-links">
+          <li><a href="#about" data-translate="footer_about">À propos</a></li>
+          <li><a href="#activites" data-translate="footer_activities">Activités</a></li>
+          <li><a href="#" data-translate="footer_privacy">Confidentialité</a></li>
+          <li><a href="#" data-translate="footer_legal">Mentions légales</a></li>
+          <li><a href="#contact" data-translate="footer_faq">Aide & FAQ</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer-copyright">
+      © <span id="currentYear"></span> Travel With Us - <span data-translate="footer_rights">Tous droits réservés.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
