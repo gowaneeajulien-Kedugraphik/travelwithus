@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="FAQ Travel With Us - Questions fréquentes sur la location de villas à l'Île Maurice. Réservation, paiement, services, activités." />
+  <meta name="robots" content="index, follow" />
+  
+  <title>Aide & FAQ | Travel With Us - Villas Île Maurice</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/Logo.webp" type="image/webp" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  
+  <style>
+    /* Styles spécifiques pour la page FAQ */
+    .faq-page {
+      padding: 120px 0 80px;
+      background: var(--white);
+      min-height: 100vh;
+    }
+    
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .faq-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .faq-title {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 800;
+      color: var(--brand-dark);
+      margin: 0 0 16px;
+    }
+    
+    .faq-subtitle {
+      font-size: 16px;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .faq-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    
+    .faq-category-btn {
+      padding: 16px 24px;
+      background: white;
+      border: 2px solid #e5e7eb;
+      border-radius: var(--radius-md);
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    
+    .faq-category-btn:hover,
+    .faq-category-btn.active {
+      background: var(--brand);
+      color: white;
+      border-color: var(--brand);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .faq-list {
+      display: grid;
+      gap: 16px;
+    }
+    
+    .faq-item {
+      background: white;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    
+    .faq-item:hover {
+      box-shadow: var(--shadow-md);
+    }
+    
+    .faq-question {
+      width: 100%;
+      padding: 24px;
+      background: none;
+      border: none;
+      text-align: left;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--brand-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      transition: var(--transition);
+    }
+    
+    .faq-question:hover {
+      color: var(--brand);
+    }
+    
+    .faq-icon {
+      font-size: 20px;
+      color: var(--brand);
+      transition: transform 0.3s;
+      flex-shrink: 0;
+    }
+    
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+    
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    
+    .faq-answer-content {
+      padding: 0 24px 24px 24px;
+      color: var(--text-light);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+    
+    .faq-answer-content p {
+      margin: 0 0 12px;
+    }
+    
+    .faq-answer-content p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .faq-answer-content ul {
+      margin: 12px 0;
+      padding-left: 24px;
+    }
+    
+    .faq-answer-content li {
+      margin-bottom: 8px;
+    }
+    
+    .faq-answer-content strong {
+      color: var(--brand-dark);
+      font-weight: 600;
+    }
+    
+    .faq-contact-box {
+      background: linear-gradient(135deg, var(--brand), #1e9ba5);
+      padding: 40px;
+      border-radius: var(--radius-lg);
+      text-align: center;
+      color: white;
+      margin-top: 60px;
+    }
+    
+    .faq-contact-box h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 16px;
+    }
+    
+    .faq-contact-box p {
+      font-size: 16px;
+      margin: 0 0 24px;
+      opacity: 0.95;
+    }
+    
+    .faq-contact-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .faq-contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      background: white;
+      color: var(--brand);
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    
+    .faq-contact-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 24px rgba(255, 255, 255, 0.3);
+    }
+    
+    .faq-back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: var(--brand);
+      color: white;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      transition: var(--transition);
+      margin-top: 40px;
+    }
+    
+    .faq-back-btn:hover {
+      background: #1e9ba5;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    @media (max-width: 768px) {
+      .faq-categories {
+        grid-template-columns: 1fr;
+      }
+      
+      .faq-question {
+        padding: 20px;
+        font-size: 15px;
+      }
+      
+      .faq-contact-box {
+        padding: 32px 24px;
+      }
+      
+      .faq-contact-buttons {
+        flex-direction: column;
+      }
+      
+      .faq-contact-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  
+  <!-- =================== HEADER =================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      
+      <!-- Logo -->
+      <a class="brand" href="./index.html" aria-label="Travel With Us - Accueil">
+        <img src="./assets/images/Logo.webp" alt="Travel With Us" class="logo" />
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav-main" aria-label="Navigation principale">
+        <a href="./index.html#villas" data-translate="menu_villas">Nos Villas</a>
+        <a href="./index.html#destinations" data-translate="menu_destinations">Destinations</a>
+        <a href="./index.html#activites" data-translate="menu_activities">Activités</a>
+        <a href="./index.html#about" data-translate="menu_about">À propos</a>
+        <a href="./index.html#contact" data-translate="menu_contact">Contact</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        
+        <!-- Email -->
+        <a href="mailto:contact@ouiitravel.com" class="btn-header-icon" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        
+        <!-- WhatsApp -->
+        <a href="https://wa.me/23055122352" class="btn-header-whatsapp" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Langue -->
+        <div class="header-dropdown" id="languageDropdown">
+          <button class="header-dropdown-btn" id="languageBtn">
+            <span class="flag-emoji" id="selectedFlag">🇫🇷</span>
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </button>
+          <div class="header-dropdown-menu">
+            <button class="header-dropdown-item active" data-lang="fr" data-flag="🇫🇷">
+              <span class="flag-emoji">🇫🇷</span>
+              <span class="item-label">Français</span>
+            </button>
+            <button class="header-dropdown-item" data-lang="en" data-flag="🇬🇧">
+              <span class="flag-emoji">🇬🇧</span>
+              <span class="item-label">English</span>
+            </button>
+            <button class="header-dropdown-item" data-lang="de" data-flag="🇩🇪">
+              <span class="flag-emoji">🇩🇪</span>
+              <span class="item-label">Deutsch</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile toggle -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="./index.html#villas" data-translate="menu_villas"><i class="fas fa-home"></i> Nos Villas</a>
+      <a href="./index.html#destinations" data-translate="menu_destinations"><i class="fas fa-map-marked-alt"></i> Destinations</a>
+      <a href="./index.html#activites" data-translate="menu_activities"><i class="fas fa-umbrella-beach"></i> Activités</a>
+      <a href="./index.html#about" data-translate="menu_about"><i class="fas fa-info-circle"></i> À propos</a>
+      <a href="./index.html#contact" data-translate="menu_contact"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="https://wa.me/23055122352" class="mobile-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="dropdown-overlay" id="dropdownOverlay"></div>
+
+  <!-- WhatsApp flottant -->
+  <a href="https://wa.me/23055122352" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- =================== CONTENU FAQ =================== -->
+  <main class="faq-page">
+    <div class="faq-container">
+      
+      <div class="faq-header">
+        <h1 class="faq-title">Aide & Questions Fréquentes</h1>
+        <p class="faq-subtitle">Trouvez rapidement les réponses à vos questions sur la location de villas à l'Île Maurice</p>
+      </div>
+
+      <!-- Catégories FAQ -->
+      <div class="faq-categories">
+        <button class="faq-category-btn active" data-category="all">
+          <i class="fas fa-th"></i>
+          <span>Toutes</span>
+        </button>
+        <button class="faq-category-btn" data-category="reservation">
+          <i class="fas fa-calendar-check"></i>
+          <span>Réservation</span>
+        </button>
+        <button class="faq-category-btn" data-category="paiement">
+          <i class="fas fa-credit-card"></i>
+          <span>Paiement</span>
+        </button>
+        <button class="faq-category-btn" data-category="sejour">
+          <i class="fas fa-home"></i>
+          <span>Séjour</span>
+        </button>
+      </div>
+
+      <!-- Liste des questions -->
+      <div class="faq-list">
+        
+        <!-- RÉSERVATION -->
+        <div class="faq-item" data-category="reservation">
+          <button class="faq-question">
+            <span>Comment réserver une villa ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>La réservation d'une villa chez Travel With Us est simple et rapide :</p>
+              <ul>
+                <li><strong>1. Parcourez</strong> notre catalogue de villas sur le site</li>
+                <li><strong>2. Contactez-nous</strong> via WhatsApp (+230 5512 2352) ou email (contact@ouiitravel.com)</li>
+                <li><strong>3. Recevez</strong> un devis personnalisé sous 24h</li>
+                <li><strong>4. Confirmez</strong> votre réservation avec un acompte</li>
+                <li><strong>5. Profitez</strong> de votre séjour avec notre assistance 24/7</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="reservation">
+          <button class="faq-question">
+            <span>Quel est le délai de réservation minimum ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Nous acceptons les réservations <strong>jusqu'à 48h avant l'arrivée</strong>, sous réserve de disponibilité.</p>
+              <p>Cependant, nous recommandons de réserver <strong>au moins 2 semaines à l'avance</strong> pendant la haute saison (décembre à mars) pour garantir le meilleur choix de villas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="reservation">
+          <button class="faq-question">
+            <span>Puis-je annuler ou modifier ma réservation ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p><strong>Conditions d'annulation :</strong></p>
+              <ul>
+                <li><strong>Plus de 30 jours avant :</strong> Remboursement intégral moins 10% de frais administratifs</li>
+                <li><strong>Entre 15 et 30 jours :</strong> Remboursement de 50% du montant total</li>
+                <li><strong>Moins de 15 jours :</strong> Aucun remboursement</li>
+              </ul>
+              <p>Les <strong>modifications</strong> (dates, nombre de personnes) sont possibles <strong>gratuitement jusqu'à 14 jours avant</strong> l'arrivée, sous réserve de disponibilité.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAIEMENT -->
+        <div class="faq-item" data-category="paiement">
+          <button class="faq-question">
+            <span>Quels sont les modes de paiement acceptés ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Nous acceptons plusieurs modes de paiement sécurisés :</p>
+              <ul>
+                <li><strong>Virement bancaire international</strong> (recommandé pour les montants importants)</li>
+                <li><strong>Carte de crédit/débit</strong> (Visa, MasterCard, American Express)</li>
+                <li><strong>PayPal</strong></li>
+                <li><strong>Wise / Western Union</strong></li>
+              </ul>
+              <p>Tous les paiements sont sécurisés et cryptés SSL.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="paiement">
+          <button class="faq-question">
+            <span>Quel est le montant de l'acompte ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Pour confirmer votre réservation, nous demandons :</p>
+              <ul>
+                <li><strong>30% d'acompte</strong> à la réservation</li>
+                <li><strong>70% restants</strong> à régler 30 jours avant l'arrivée</li>
+              </ul>
+              <p>Pour les réservations de dernière minute (moins de 30 jours), le <strong>paiement intégral</strong> est requis.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="paiement">
+          <button class="faq-question">
+            <span>Y a-t-il une caution à verser ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Oui, une <strong>caution remboursable</strong> est demandée pour chaque villa :</p>
+              <ul>
+                <li><strong>Entre 300€ et 1000€</strong> selon la villa</li>
+                <li>Payable à l'arrivée (espèces, carte ou virement)</li>
+                <li><strong>Remboursée intégralement</strong> sous 7 jours après votre départ si aucun dommage constaté</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- SÉJOUR -->
+        <div class="faq-item" data-category="sejour">
+          <button class="faq-question">
+            <span>À quelle heure puis-je arriver et partir ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p><strong>Horaires standards :</strong></p>
+              <ul>
+                <li><strong>Arrivée (Check-in) :</strong> À partir de 15h00</li>
+                <li><strong>Départ (Check-out) :</strong> Avant 11h00</li>
+              </ul>
+              <p>Des horaires flexibles peuvent être arrangés selon disponibilité. Contactez-nous pour toute demande spécifique (arrivée anticipée, départ tardif).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="sejour">
+          <button class="faq-question">
+            <span>Les villas sont-elles équipées ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p><strong>Toutes nos villas incluent :</strong></p>
+              <ul>
+                <li>✅ Cuisine entièrement équipée (réfrigérateur, four, ustensiles)</li>
+                <li>✅ Climatisation et ventilateurs</li>
+                <li>✅ Linge de maison (draps, serviettes)</li>
+                <li>✅ WiFi haut débit</li>
+                <li>✅ TV avec chaînes internationales</li>
+                <li>✅ Piscine privée</li>
+                <li>✅ Espace extérieur avec mobilier de jardin</li>
+                <li>✅ Fer à repasser, sèche-cheveux</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="sejour">
+          <button class="faq-question">
+            <span>Proposez-vous des services de ménage ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p><strong>Services inclus :</strong></p>
+              <ul>
+                <li>✅ Ménage initial avant votre arrivée</li>
+                <li>✅ Ménage final après votre départ</li>
+              </ul>
+              <p><strong>Services optionnels (avec supplément) :</strong></p>
+              <ul>
+                <li>🔹 Ménage quotidien : 25€/jour</li>
+                <li>🔹 Ménage en milieu de séjour : 40€</li>
+                <li>🔹 Service de blanchisserie</li>
+                <li>🔹 Chef privé à domicile</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="sejour">
+          <button class="faq-question">
+            <span>Organisez-vous des transferts aéroport ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p><strong>Oui !</strong> Nous proposons un service de transfert privé de l'aéroport à votre villa :</p>
+              <ul>
+                <li><strong>Tarifs :</strong> Entre 40€ et 80€ selon la distance</li>
+                <li><strong>Véhicules climatisés</strong> confortables</li>
+                <li><strong>Chauffeur anglophone/francophone</strong></li>
+                <li><strong>Accueil personnalisé</strong> à l'aéroport avec panneau</li>
+                <li><strong>Boissons offertes</strong> à bord</li>
+              </ul>
+              <p>Réservez votre transfert lors de votre réservation de villa pour <strong>bénéficier d'un tarif préférentiel</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="sejour">
+          <button class="faq-question">
+            <span>Puis-je réserver des activités via Travel With Us ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p><strong>Absolument !</strong> Nous proposons un service de conciergerie complet :</p>
+              <ul>
+                <li>🚁 Tour en hélicoptère</li>
+                <li>🛥️ Croisière en catamaran</li>
+                <li>🏍️ Safari en quad</li>
+                <li>🤿 Plongée et snorkeling</li>
+                <li>🎣 Pêche au gros</li>
+                <li>🍽️ Réservation de restaurants</li>
+                <li>🏌️ Golf, spa, et plus encore</li>
+              </ul>
+              <p>Contactez-nous pour obtenir un <strong>devis personnalisé</strong> et profiter de nos <strong>tarifs négociés</strong> avec nos partenaires.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="sejour">
+          <button class="faq-question">
+            <span>Les villas acceptent-elles les animaux de compagnie ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>La politique varie selon les villas :</p>
+              <ul>
+                <li>✅ <strong>Certaines villas acceptent</strong> les animaux avec un supplément (50€-100€/séjour)</li>
+                <li>❌ <strong>D'autres refusent</strong> pour des raisons d'hygiène ou d'allergies</li>
+              </ul>
+              <p><strong>Informez-nous lors de votre demande</strong> si vous voyagez avec un animal, nous vous proposerons les villas adaptées.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- GÉNÉRAL -->
+        <div class="faq-item" data-category="all">
+          <button class="faq-question">
+            <span>Que faire en cas de problème pendant mon séjour ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Notre équipe est <strong>disponible 24/7</strong> pour vous assister :</p>
+              <ul>
+                <li>📞 <strong>Téléphone d'urgence :</strong> +230 5512 2352</li>
+                <li>💬 <strong>WhatsApp :</strong> Réponse en moins de 30 minutes</li>
+                <li>📧 <strong>Email :</strong> contact@ouiitravel.com</li>
+              </ul>
+              <p>Que ce soit un problème technique, une question sur la villa ou une demande spéciale, nous intervenons <strong>rapidement</strong> pour garantir votre confort.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="all">
+          <button class="faq-question">
+            <span>Proposez-vous des réductions pour les longs séjours ?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p><strong>Oui !</strong> Nous offrons des tarifs dégressifs :</p>
+              <ul>
+                <li>🔹 <strong>7-13 nuits :</strong> -5%</li>
+                <li>🔹 <strong>14-20 nuits :</strong> -10%</li>
+                <li>🔹 <strong>21-27 nuits :</strong> -15%</li>
+                <li>🔹 <strong>28+ nuits :</strong> -20%</li>
+              </ul>
+              <p>Les réductions s'appliquent automatiquement. Contactez-nous pour un <strong>devis personnalisé</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact Box -->
+      <div class="faq-contact-box">
+        <h2>Vous ne trouvez pas votre réponse ?</h2>
+        <p>Notre équipe est là pour vous aider ! Contactez-nous par WhatsApp, email ou téléphone.</p>
+        <div class="faq-contact-buttons">
+          <a href="https://wa.me/23055122352" class="faq-contact-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="mailto:contact@ouiitravel.com" class="faq-contact-btn">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+          <a href="tel:+23055122352" class="faq-contact-btn">
+            <i class="fas fa-phone"></i>
+            <span>Téléphone</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="./index.html" class="faq-back-btn">
+        <i class="fas fa-arrow-left"></i>
+        <span>Retour à l'accueil</span>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      
+      <!-- Colonne 1 -->
+      <div class="footer-col">
+        <img src="./assets/images/Logo.webp" alt="Travel With Us" class="footer-logo" />
+        <p class="hashtag">#travelwithus</p>
+
+        <div class="footer-contact">
+          <h4 class="footer-title">Contactez-nous</h4>
+          <a href="https://wa.me/23055122352" class="footer-link" target="_blank">
+            <i class="fab fa-whatsapp"></i> +230 5512 2352
+          </a>
+          <a href="mailto:contact@ouiitravel.com" class="footer-link">
+            <i class="fas fa-envelope"></i> contact@ouiitravel.com
+          </a>
+          <a href="tel:+23055122352" class="footer-link">
+            <i class="fas fa-phone"></i> +230 5512 2352
+          </a>
+        </div>
+
+        <ul class="socials">
+          <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne 2 -->
+      <div class="footer-col">
+        <h4 class="footer-title">Destinations</h4>
+        <ul class="footer-links">
+          <li><a href="./index.html#destinations">Nord - Grand Baie</a></li>
+          <li><a href="./index.html#destinations">Sud - Le Morne</a></li>
+          <li><a href="./index.html#destinations">Est - Belle Mare</a></li>
+          <li><a href="./index.html#destinations">Ouest - Flic-en-Flac</a></li>
+          <li><a href="./index.html#villas">Toutes nos villas</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne 3 -->
+      <div class="footer-col">
+        <h4 class="footer-title">Informations</h4>
+        <ul class="footer-links">
+          <li><a href="./index.html#about">À propos</a></li>
+          <li><a href="./index.html#activites">Activités</a></li>
+          <li><a href="#">Confidentialité</a></li>
+          <li><a href="./mentions-legales.html">Mentions légales</a></li>
+          <li><a href="./aide-faq.html">Aide & FAQ</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer-copyright">
+      © <span id="currentYear"></span> Travel With Us - Tous droits réservés.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="./assets/js/script.js"></script>
+  
+  <!-- Script FAQ Accordion -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Gestion des accordéons FAQ
+      const faqItems = document.querySelectorAll('.faq-item');
+      
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        
+        question.addEventListener('click', () => {
+          // Fermer les autres items
+          faqItems.forEach(otherItem => {
+            if (otherItem !== item && otherItem.classList.contains('active')) {
+              otherItem.classList.remove('active');
+              otherItem.querySelector('.faq-answer').style.maxHeight = null;
+            }
+          });
+          
+          // Toggle l'item actuel
+          item.classList.toggle('active');
+          
+          if (item.classList.contains('active')) {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          } else {
+            answer.style.maxHeight = null;
+          }
+        });
+      });
+      
+      // Gestion des catégories
+      const categoryBtns = document.querySelectorAll('.faq-category-btn');
+      
+      categoryBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const category = btn.dataset.category;
+          
+          // Update active button
+          categoryBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          // Filter FAQ items
+          faqItems.forEach(item => {
+            if (category === 'all' || item.dataset.category === category) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+              item.classList.remove('active');
+              item.querySelector('.faq-answer').style.maxHeight = null;
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
