@@ -158,7 +158,6 @@ const TRANSLATIONS = {
     footer_activities: 'Activités',
     footer_privacy: 'Confidentialité',
     footer_legal: 'Mentions légales',
-    footer_faq: 'Aide & FAQ',
     footer_rights: 'Tous droits réservés.',
     
     // ===== PAGE CONFIDENTIALITÉ =====
@@ -451,7 +450,6 @@ const TRANSLATIONS = {
     footer_activities: 'Activities',
     footer_privacy: 'Privacy',
     footer_legal: 'Legal Notice',
-    footer_faq: 'Help & FAQ',
     footer_rights: 'All rights reserved.',
     
     // Privacy Page
@@ -744,7 +742,6 @@ const TRANSLATIONS = {
     footer_activities: 'Aktivitäten',
     footer_privacy: 'Datenschutz',
     footer_legal: 'Impressum',
-    footer_faq: 'Hilfe & FAQ',
     footer_rights: 'Alle Rechte vorbehalten.',
     
     // Privacy Page
