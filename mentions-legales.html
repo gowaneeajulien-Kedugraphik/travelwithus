@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Mentions légales - Travel With Us LTD. Informations juridiques et légales de notre entreprise." />
+  <meta name="robots" content="index, follow" />
+  
+  <title>Mentions Légales | Travel With Us - Location Villas Maurice</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/Logo.webp" type="image/webp" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  
+  <style>
+    /* Styles spécifiques page mentions légales */
+    body {
+      padding-top: 72px;
+    }
+    
+    .legal-hero {
+      background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand) 100%);
+      padding: 80px 0 60px;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .legal-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920') center/cover;
+      opacity: 0.1;
+      z-index: 0;
+    }
+    
+    .legal-hero-content {
+      position: relative;
+      z-index: 10;
+    }
+    
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 14px;
+      margin-bottom: 24px;
+      opacity: 0.9;
+    }
+    
+    .breadcrumb a {
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    
+    .breadcrumb a:hover {
+      opacity: 0.7;
+    }
+    
+    .breadcrumb i {
+      font-size: 12px;
+    }
+    
+    .legal-hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 800;
+      margin: 0 0 16px;
+    }
+    
+    .legal-hero p {
+      font-size: 16px;
+      opacity: 0.95;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .legal-content {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    
+    .legal-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .last-update {
+      background: var(--brand-light);
+      border-left: 4px solid var(--brand);
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 40px;
+      font-size: 14px;
+      color: var(--text-light);
+    }
+    
+    .last-update strong {
+      color: var(--brand-dark);
+      font-weight: 600;
+    }
+    
+    .legal-section {
+      margin-bottom: 48px;
+    }
+    
+    .legal-section h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin: 0 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--brand-light);
+    }
+    
+    .legal-section h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--brand-dark);
+      margin: 24px 0 12px;
+    }
+    
+    .legal-section p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--text-light);
+      margin: 0 0 16px;
+    }
+    
+    .legal-section ul,
+    .legal-section ol {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+    
+    .legal-section li {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--text-light);
+      margin-bottom: 8px;
+    }
+    
+    .legal-section strong {
+      color: var(--brand-dark);
+      font-weight: 600;
+    }
+    
+    .info-box {
+      background: #f8f9fa;
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin: 24px 0;
+    }
+    
+    .info-box h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--brand);
+      margin: 0 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .info-box p {
+      margin: 0;
+      font-size: 14px;
+    }
+    
+    .contact-box {
+      background: linear-gradient(135deg, var(--brand-light), white);
+      border: 2px solid var(--brand);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin: 48px 0;
+      text-align: center;
+    }
+    
+    .contact-box h3 {
+      font-size: 24px;
+      color: var(--brand-dark);
+      margin: 0 0 16px;
+    }
+    
+    .contact-box p {
+      margin: 0 0 24px;
+      font-size: 15px;
+    }
+    
+    .contact-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: var(--brand);
+      color: white;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 14px;
+      transition: var(--transition);
+    }
+    
+    .contact-link:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .contact-link.secondary {
+      background: white;
+      color: var(--brand);
+      border: 2px solid var(--brand);
+    }
+    
+    .back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      background: white;
+      color: var(--brand);
+      text-decoration: none;
+      border: 2px solid var(--brand);
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 15px;
+      transition: var(--transition);
+      margin-top: 40px;
+    }
+    
+    .back-home:hover {
+      background: var(--brand);
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .legal-hero {
+        padding: 60px 0 40px;
+      }
+      
+      .legal-content {
+        padding: 60px 0;
+      }
+      
+      .legal-section h2 {
+        font-size: 24px;
+      }
+      
+      .contact-links {
+        flex-direction: column;
+      }
+      
+      .contact-link {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  
+  <!-- =================== HEADER =================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      
+      <!-- Logo -->
+      <a class="brand" href="index.html" aria-label="Travel With Us - Accueil">
+        <img src="./assets/images/Logo.webp" alt="Travel With Us" class="logo" />
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav-main" aria-label="Navigation principale">
+        <a href="index.html#villas" data-translate="menu_villas">Nos Villas</a>
+        <a href="index.html#destinations" data-translate="menu_destinations">Destinations</a>
+        <a href="index.html#activites" data-translate="menu_activities">Activités</a>
+        <a href="index.html#about" data-translate="menu_about">À propos</a>
+        <a href="index.html#contact" data-translate="menu_contact">Contact</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        
+        <!-- Email -->
+        <a href="mailto:contact@ouiitravel.com" class="btn-header-icon" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        
+        <!-- WhatsApp -->
+        <a href="https://wa.me/23055122352" class="btn-header-whatsapp" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Langue -->
+        <div class="header-dropdown" id="languageDropdown">
+          <button class="header-dropdown-btn" id="languageBtn">
+            <span class="flag-emoji" id="selectedFlag">🇫🇷</span>
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </button>
+          <div class="header-dropdown-menu">
+            <button class="header-dropdown-item active" data-lang="fr" data-flag="🇫🇷">
+              <span class="flag-emoji">🇫🇷</span>
+              <span class="item-label">Français</span>
+            </button>
+            <button class="header-dropdown-item" data-lang="en" data-flag="🇬🇧">
+              <span class="flag-emoji">🇬🇧</span>
+              <span class="item-label">English</span>
+            </button>
+            <button class="header-dropdown-item" data-lang="de" data-flag="🇩🇪">
+              <span class="flag-emoji">🇩🇪</span>
+              <span class="item-label">Deutsch</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile toggle -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="index.html#villas" data-translate="menu_villas"><i class="fas fa-home"></i> Nos Villas</a>
+      <a href="index.html#destinations" data-translate="menu_destinations"><i class="fas fa-map-marked-alt"></i> Destinations</a>
+      <a href="index.html#activites" data-translate="menu_activities"><i class="fas fa-umbrella-beach"></i> Activités</a>
+      <a href="index.html#about" data-translate="menu_about"><i class="fas fa-info-circle"></i> À propos</a>
+      <a href="index.html#contact" data-translate="menu_contact"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="https://wa.me/23055122352" class="mobile-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="dropdown-overlay" id="dropdownOverlay"></div>
+
+  <!-- WhatsApp flottant -->
+  <a href="https://wa.me/23055122352" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- =================== HERO =================== -->
+  <section class="legal-hero">
+    <div class="legal-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html" data-translate="breadcrumb_home">Accueil</a>
+        <i class="fas fa-chevron-right"></i>
+        <span data-translate="breadcrumb_legal">Mentions légales</span>
+      </div>
+      
+      <h1 data-translate="legal_title">Mentions Légales</h1>
+      <p data-translate="legal_subtitle">Informations juridiques et légales de notre entreprise</p>
+    </div>
+  </section>
+
+  <!-- =================== CONTENU =================== -->
+  <section class="legal-content">
+    <div class="legal-container">
+      
+      <!-- Dernière mise à jour -->
+      <div class="last-update">
+        <strong data-translate="last_update_label">Dernière mise à jour :</strong> 
+        <span data-translate="last_update_date">10 février 2026</span>
+      </div>
+
+      <!-- Section 1 : Éditeur du site -->
+      <div class="legal-section">
+        <h2 data-translate="legal_section1_title">1. Éditeur du site</h2>
+        
+        <div class="info-box">
+          <h4><i class="fas fa-building"></i> <span data-translate="company_info_title">Informations sur l'entreprise</span></h4>
+          <p>
+            <strong data-translate="legal_company_name_label">Raison sociale :</strong> Travel With Us LTD<br>
+            <strong>BRN :</strong> C25225204<br>
+            <strong data-translate="legal_address_label">Siège social :</strong> <span data-translate="legal_address">Tamarin, Mauritius</span><br>
+            <strong data-translate="legal_email_label">Email :</strong> contact@ouiitravel.com<br>
+            <strong data-translate="legal_phone_label">Téléphone :</strong> +230 5512 2352
+          </p>
+        </div>
+        
+        <p data-translate="legal_section1_p1">
+          Le site web <strong>travelwithus.mu</strong> (ci-après "le Site") est édité par <strong>Travel With Us LTD</strong>, société immatriculée à Maurice sous le numéro BRN C25225204.
+        </p>
+        
+        <p data-translate="legal_section1_p2">
+          <strong data-translate="legal_director_label">Directeur de publication :</strong> <span data-translate="legal_director">Direction de Travel With Us LTD</span>
+        </p>
+      </div>
+
+      <!-- Section 2 : Hébergement -->
+      <div class="legal-section">
+        <h2 data-translate="legal_section2_title">2. Hébergement du site</h2>
+        
+        <p data-translate="legal_section2_p1">Le Site est hébergé par :</p>
+        
+        <div class="info-box">
+          <h4><i class="fas fa-server"></i> <span data-translate="legal_host_title">Informations hébergeur</span></h4>
+          <p>
+            <strong data-translate="legal_host_name_label">Nom :</strong> GitHub, Inc<br>
+            <strong data-translate="legal_host_address_label">Adresse :</strong> 548 4th St, San Francisco, CA 94107, United States<br>
+            <strong data-translate="legal_host_website_label">Site web :</strong> <a href="https://github.com" target="_blank" rel="noopener">github.com</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 3 : Propriété intellectuelle -->
+      <div class="legal-section">
+        <h2 data-translate="legal_section3_title">3. Propriété intellectuelle</h2>
+        
+        <p data-translate="legal_section3_p1">
+          L'ensemble du contenu présent sur le Site, incluant sans limitation les textes, images, graphismes, logos, icônes, sons, logiciels, ainsi que leur mise en forme, sont la propriété exclusive de <strong>Travel With Us LTD</strong> ou font l'objet d'une autorisation d'utilisation.
+        </p>
+        
+        <p data-translate="legal_section3_p2">
+          Toute reproduction, représentation, modification, publication, adaptation totale ou partielle des éléments du Site, quel que soit le moyen ou le procédé utilisé, est interdite sans autorisation écrite préalable de Travel With Us LTD.
+        </p>
+        
+        <p data-translate="legal_section3_p3">
+          Toute exploitation non autorisée du Site ou de son contenu engagerait la responsabilité de l'utilisateur et constituerait une contrefaçon sanctionnée par le Code de la propriété intellectuelle.
+        </p>
+        
+        <h3 data-translate="legal_section3_h3">Marques et logos</h3>
+        <p data-translate="legal_section3_p4">
+          Les marques et logos figurant sur le Site sont des marques déposées ou non de <strong>Travel With Us LTD</strong>. Toute reproduction totale ou partielle de ces marques ou logos sans autorisation préalable est interdite.
+        </p>
+      </div>
+
+      <!-- Section 4 : Responsabilité -->
+      <div class="legal-section">
+        <h2 data-translate="legal_section4_title">4. Limitation de responsabilité</h2>
+        
+        <p data-translate="legal_section4_p1">
+          <strong>Travel With Us LTD</strong> s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur le Site. Toutefois, nous ne pouvons garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site.
+        </p>
+        
+        <p data-translate="legal_section4_p2">
+          Travel With Us LTD ne pourra être tenue responsable des dommages directs ou indirects résultant de l'accès au Site ou de l'utilisation de celui-ci, incluant notamment :
+        </p>
+        
+        <ul>
+          <li data-translate="legal_section4_li1">L'inaccessibilité temporaire ou permanente du Site</li>
+          <li data-translate="legal_section4_li2">L'utilisation frauduleuse du Site par un tiers</li>
+          <li data-translate="legal_section4_li3">Les dommages causés par des virus informatiques</li>
+          <li data-translate="legal_section4_li4">L'impossibilité d'accéder au Site en raison d'un matériel ou logiciel inadapté</li>
+        </ul>
+        
+        <p data-translate="legal_section4_p3">
+          L'utilisateur reconnaît utiliser le Site à ses propres risques et sous sa responsabilité exclusive.
+        </p>
+      </div>
+
+      <!-- Section 5 : Liens hypertextes -->
+      <div class="legal-section">
+        <h2 data-translate="legal_section5_title">5. Liens hypertextes</h2>
+        
+        <h3 data-translate="legal_section5_h3_1">Liens sortants</h3>
+        <p data-translate="legal_section5_p1">
+          Le Site peut contenir des liens hypertextes vers d'autres sites internet. Travel With Us LTD ne dispose d'aucun contrôle sur ces sites tiers et décline toute responsabilité quant à leur contenu, leur disponibilité ou leurs pratiques en matière de protection des données personnelles.
+        </p>
+        
+        <h3 data-translate="legal_section5_h3_2">Liens entrants</h3>
+        <p data-translate="legal_section5_p2">
+          La création de liens hypertextes vers le Site nécessite l'autorisation préalable écrite de Travel With Us LTD. Cette autorisation peut être demandée par email à : contact@ouiitravel.com
+        </p>
+      </div>
+
+      <!-- Section 6 : Données personnelles -->
+      <div class="legal-section">
+        <h2 data-translate="legal_section6_title">6. Protection des données personnelles</h2>
+        
+        <p data-translate="legal_section6_p1">
+          Les informations concernant la collecte, le traitement et la protection de vos données personnelles sont détaillées dans notre <a href="confidentialite.html" style="color: var(--brand); font-weight: 600;">Politique de Confidentialité</a>.
+        </p>
+        
+        <p data-translate="legal_section6_p2">
+          Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition concernant vos données personnelles. Pour exercer ces droits, contactez-nous à : contact@ouiitravel.com
+        </p>
+      </div>
+
+      <!-- Section 7 : Cookies -->
+      <div class="legal-section">
+        <h2 data-translate="legal_section7_title">7. Cookies</h2>
+        
+        <p data-translate="legal_section7_p1">
+          Le Site utilise des cookies pour améliorer l'expérience utilisateur et analyser le trafic. Vous pouvez gérer vos préférences en matière de cookies via les paramètres de votre navigateur.
+        </p>
+        
+        <p data-translate="legal_section7_p2">
+          Pour plus d'informations sur notre utilisation des cookies, consultez notre <a href="confidentialite.html#section5" style="color: var(--brand); font-weight: 600;">Politique de Confidentialité - Section Cookies</a>.
+        </p>
+      </div>
+
+      <!-- Section 8 : Droit applicable -->
+      <div class="legal-section">
+        <h2 data-translate="legal_section8_title">8. Droit applicable et juridiction</h2>
+        
+        <p data-translate="legal_section8_p1">
+          Les présentes mentions légales sont régies par le droit mauricien. Tout litige relatif à l'utilisation du Site sera soumis à la compétence exclusive des tribunaux de Maurice.
+        </p>
+        
+        <p data-translate="legal_section8_p2">
+          En cas de litige, une solution amiable sera recherchée avant toute action judiciaire. À défaut d'accord amiable, le litige sera porté devant les tribunaux compétents de Maurice.
+        </p>
+      </div>
+
+      <!-- Section 9 : Modification des mentions légales -->
+      <div class="legal-section">
+        <h2 data-translate="legal_section9_title">9. Modification des mentions légales</h2>
+        
+        <p data-translate="legal_section9_p1">
+          Travel With Us LTD se réserve le droit de modifier les présentes mentions légales à tout moment. Les modifications entrent en vigueur dès leur publication sur le Site. Il est conseillé de consulter régulièrement cette page pour prendre connaissance des éventuelles modifications.
+        </p>
+        
+        <p data-translate="legal_section9_p2">
+          Date de dernière modification : <strong data-translate="last_update_date">10 février 2026</strong>
+        </p>
+      </div>
+
+      <!-- Section Contact -->
+      <div class="contact-box">
+        <h3 data-translate="legal_contact_title">Questions juridiques ?</h3>
+        <p data-translate="legal_contact_text">
+          Pour toute question concernant ces mentions légales ou l'utilisation du site, notre équipe est à votre disposition.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:contact@ouiitravel.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span data-translate="contact_email_btn">Envoyer un email</span>
+          </a>
+          <a href="https://wa.me/23055122352?text=Question%20juridique" class="contact-link secondary" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span data-translate="contact_whatsapp_btn">WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bouton retour -->
+      <div style="text-align: center;">
+        <a href="index.html" class="back-home">
+          <i class="fas fa-arrow-left"></i>
+          <span data-translate="back_home_btn">Retour à l'accueil</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      
+      <!-- Colonne 1 -->
+      <div class="footer-col">
+        <img src="./assets/images/Logo.webp" alt="Travel With Us" class="footer-logo" />
+        <p class="hashtag">#travelwithus</p>
+
+        <div class="footer-contact">
+          <h4 class="footer-title" data-translate="footer_contact">Contactez-nous</h4>
+          <a href="https://wa.me/23055122352" class="footer-link" target="_blank">
+            <i class="fab fa-whatsapp"></i> +230 5512 2352
+          </a>
+          <a href="mailto:contact@ouiitravel.com" class="footer-link">
+            <i class="fas fa-envelope"></i> contact@ouiitravel.com
+          </a>
+          <a href="tel:+23055122352" class="footer-link">
+            <i class="fas fa-phone"></i> +230 5512 2352
+          </a>
+        </div>
+
+        <ul class="socials">
+          <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne 2 -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-translate="footer_destinations">Destinations</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#destinations" data-translate="footer_north">Nord - Grand Baie</a></li>
+          <li><a href="index.html#destinations" data-translate="footer_south">Sud - Le Morne</a></li>
+          <li><a href="index.html#destinations" data-translate="footer_east">Est - Belle Mare</a></li>
+          <li><a href="index.html#destinations" data-translate="footer_west">Ouest - Flic-en-Flac</a></li>
+          <li><a href="index.html#villas" data-translate="footer_all_villas">Toutes nos villas</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne 3 -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-translate="footer_info">Informations</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#about" data-translate="footer_about">À propos</a></li>
+          <li><a href="index.html#activites" data-translate="footer_activities">Activités</a></li>
+          <li><a href="confidentialite.html" data-translate="footer_privacy">Confidentialité</a></li>
+          <li><a href="mentions-legales.html" data-translate="footer_legal">Mentions légales</a></li>
+          <li><a href="index.html#contact" data-translate="footer_faq">Aide & FAQ</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer-copyright">
+      © <span id="currentYear"></span> Travel With Us LTD - <span data-translate="footer_rights">Tous droits réservés.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="./assets/js/script.js"></script>
+  
+  <script>
+    // Script spécifique pour la page mentions légales
+    console.log('📄 Page Mentions Légales chargée');
+  </script>
+</body>
+</html>

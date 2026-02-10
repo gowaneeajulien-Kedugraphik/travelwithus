@@ -258,7 +258,60 @@ const TRANSLATIONS = {
     contact_box_text: 'Notre équipe est à votre disposition pour répondre à toutes vos questions concernant cette politique de confidentialité ou l\'utilisation de vos données.',
     contact_email_btn: 'Envoyer un email',
     contact_whatsapp_btn: 'WhatsApp',
-    back_home_btn: 'Retour à l\'accueil'
+    back_home_btn: 'Retour à l\'accueil',
+    
+    // ===== PAGE MENTIONS LÉGALES =====
+    breadcrumb_legal: 'Mentions légales',
+    legal_title: 'Mentions Légales',
+    legal_subtitle: 'Informations juridiques et légales de notre entreprise',
+    legal_section1_title: '1. Éditeur du site',
+    legal_company_name_label: 'Raison sociale :',
+    legal_address_label: 'Siège social :',
+    legal_email_label: 'Email :',
+    legal_phone_label: 'Téléphone :',
+    legal_section1_p1: 'Le site web travelwithus.mu (ci-après "le Site") est édité par Travel With Us LTD, société immatriculée à Maurice sous le numéro BRN C25225204.',
+    legal_director_label: 'Directeur de publication :',
+    legal_director: 'Direction de Travel With Us LTD',
+    legal_section1_p2: 'Directeur de publication : Direction de Travel With Us LTD',
+    legal_section2_title: '2. Hébergement du site',
+    legal_section2_p1: 'Le Site est hébergé par :',
+    legal_host_title: 'Informations hébergeur',
+    legal_host_name_label: 'Nom :',
+    legal_host_address_label: 'Adresse :',
+    legal_host_website_label: 'Site web :',
+    legal_section3_title: '3. Propriété intellectuelle',
+    legal_section3_p1: 'L\'ensemble du contenu présent sur le Site, incluant sans limitation les textes, images, graphismes, logos, icônes, sons, logiciels, ainsi que leur mise en forme, sont la propriété exclusive de Travel With Us LTD ou font l\'objet d\'une autorisation d\'utilisation.',
+    legal_section3_p2: 'Toute reproduction, représentation, modification, publication, adaptation totale ou partielle des éléments du Site, quel que soit le moyen ou le procédé utilisé, est interdite sans autorisation écrite préalable de Travel With Us LTD.',
+    legal_section3_p3: 'Toute exploitation non autorisée du Site ou de son contenu engagerait la responsabilité de l\'utilisateur et constituerait une contrefaçon sanctionnée par le Code de la propriété intellectuelle.',
+    legal_section3_h3: 'Marques et logos',
+    legal_section3_p4: 'Les marques et logos figurant sur le Site sont des marques déposées ou non de Travel With Us LTD. Toute reproduction totale ou partielle de ces marques ou logos sans autorisation préalable est interdite.',
+    legal_section4_title: '4. Limitation de responsabilité',
+    legal_section4_p1: 'Travel With Us LTD s\'efforce d\'assurer l\'exactitude et la mise à jour des informations diffusées sur le Site. Toutefois, nous ne pouvons garantir l\'exactitude, la précision ou l\'exhaustivité des informations mises à disposition sur ce site.',
+    legal_section4_p2: 'Travel With Us LTD ne pourra être tenue responsable des dommages directs ou indirects résultant de l\'accès au Site ou de l\'utilisation de celui-ci, incluant notamment :',
+    legal_section4_li1: 'L\'inaccessibilité temporaire ou permanente du Site',
+    legal_section4_li2: 'L\'utilisation frauduleuse du Site par un tiers',
+    legal_section4_li3: 'Les dommages causés par des virus informatiques',
+    legal_section4_li4: 'L\'impossibilité d\'accéder au Site en raison d\'un matériel ou logiciel inadapté',
+    legal_section4_p3: 'L\'utilisateur reconnaît utiliser le Site à ses propres risques et sous sa responsabilité exclusive.',
+    legal_section5_title: '5. Liens hypertextes',
+    legal_section5_h3_1: 'Liens sortants',
+    legal_section5_p1: 'Le Site peut contenir des liens hypertextes vers d\'autres sites internet. Travel With Us LTD ne dispose d\'aucun contrôle sur ces sites tiers et décline toute responsabilité quant à leur contenu, leur disponibilité ou leurs pratiques en matière de protection des données personnelles.',
+    legal_section5_h3_2: 'Liens entrants',
+    legal_section5_p2: 'La création de liens hypertextes vers le Site nécessite l\'autorisation préalable écrite de Travel With Us LTD. Cette autorisation peut être demandée par email à : contact@ouiitravel.com',
+    legal_section6_title: '6. Protection des données personnelles',
+    legal_section6_p1: 'Les informations concernant la collecte, le traitement et la protection de vos données personnelles sont détaillées dans notre Politique de Confidentialité.',
+    legal_section6_p2: 'Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d\'un droit d\'accès, de rectification, de suppression et d\'opposition concernant vos données personnelles. Pour exercer ces droits, contactez-nous à : contact@ouiitravel.com',
+    legal_section7_title: '7. Cookies',
+    legal_section7_p1: 'Le Site utilise des cookies pour améliorer l\'expérience utilisateur et analyser le trafic. Vous pouvez gérer vos préférences en matière de cookies via les paramètres de votre navigateur.',
+    legal_section7_p2: 'Pour plus d\'informations sur notre utilisation des cookies, consultez notre Politique de Confidentialité - Section Cookies.',
+    legal_section8_title: '8. Droit applicable et juridiction',
+    legal_section8_p1: 'Les présentes mentions légales sont régies par le droit mauricien. Tout litige relatif à l\'utilisation du Site sera soumis à la compétence exclusive des tribunaux de Maurice.',
+    legal_section8_p2: 'En cas de litige, une solution amiable sera recherchée avant toute action judiciaire. À défaut d\'accord amiable, le litige sera porté devant les tribunaux compétents de Maurice.',
+    legal_section9_title: '9. Modification des mentions légales',
+    legal_section9_p1: 'Travel With Us LTD se réserve le droit de modifier les présentes mentions légales à tout moment. Les modifications entrent en vigueur dès leur publication sur le Site. Il est conseillé de consulter régulièrement cette page pour prendre connaissance des éventuelles modifications.',
+    legal_section9_p2: 'Date de dernière modification : 10 février 2026',
+    legal_contact_title: 'Questions juridiques ?',
+    legal_contact_text: 'Pour toute question concernant ces mentions légales ou l\'utilisation du site, notre équipe est à votre disposition.'
   },
   
   en: {
@@ -498,7 +551,60 @@ const TRANSLATIONS = {
     contact_box_text: 'Our team is available to answer all your questions about this privacy policy or the use of your data.',
     contact_email_btn: 'Send an email',
     contact_whatsapp_btn: 'WhatsApp',
-    back_home_btn: 'Back to home'
+    back_home_btn: 'Back to home',
+    
+    // ===== LEGAL NOTICE PAGE =====
+    breadcrumb_legal: 'Legal Notice',
+    legal_title: 'Legal Notice',
+    legal_subtitle: 'Legal and juridical information about our company',
+    legal_section1_title: '1. Website Publisher',
+    legal_company_name_label: 'Company name:',
+    legal_address_label: 'Registered office:',
+    legal_email_label: 'Email:',
+    legal_phone_label: 'Phone:',
+    legal_section1_p1: 'The website travelwithus.mu (hereinafter "the Site") is published by Travel With Us LTD, a company registered in Mauritius under number BRN C25225204.',
+    legal_director_label: 'Publication director:',
+    legal_director: 'Travel With Us LTD Management',
+    legal_section1_p2: 'Publication director: Travel With Us LTD Management',
+    legal_section2_title: '2. Website Hosting',
+    legal_section2_p1: 'The Site is hosted by:',
+    legal_host_title: 'Host Information',
+    legal_host_name_label: 'Name:',
+    legal_host_address_label: 'Address:',
+    legal_host_website_label: 'Website:',
+    legal_section3_title: '3. Intellectual Property',
+    legal_section3_p1: 'All content on the Site, including but not limited to texts, images, graphics, logos, icons, sounds, software, and their formatting, are the exclusive property of Travel With Us LTD or are subject to an authorization for use.',
+    legal_section3_p2: 'Any reproduction, representation, modification, publication, total or partial adaptation of the Site elements, whatever the means or process used, is prohibited without prior written authorization from Travel With Us LTD.',
+    legal_section3_p3: 'Any unauthorized use of the Site or its content would engage the user\'s responsibility and constitute counterfeiting sanctioned by the Intellectual Property Code.',
+    legal_section3_h3: 'Trademarks and logos',
+    legal_section3_p4: 'The trademarks and logos appearing on the Site are registered or unregistered trademarks of Travel With Us LTD. Any total or partial reproduction of these trademarks or logos without prior authorization is prohibited.',
+    legal_section4_title: '4. Limitation of Liability',
+    legal_section4_p1: 'Travel With Us LTD strives to ensure the accuracy and updating of information disseminated on the Site. However, we cannot guarantee the accuracy, precision, or completeness of the information made available on this site.',
+    legal_section4_p2: 'Travel With Us LTD cannot be held responsible for direct or indirect damages resulting from access to or use of the Site, including in particular:',
+    legal_section4_li1: 'Temporary or permanent inaccessibility of the Site',
+    legal_section4_li2: 'Fraudulent use of the Site by a third party',
+    legal_section4_li3: 'Damage caused by computer viruses',
+    legal_section4_li4: 'Inability to access the Site due to unsuitable hardware or software',
+    legal_section4_p3: 'The user acknowledges using the Site at their own risk and under their exclusive responsibility.',
+    legal_section5_title: '5. Hyperlinks',
+    legal_section5_h3_1: 'Outgoing links',
+    legal_section5_p1: 'The Site may contain hyperlinks to other websites. Travel With Us LTD has no control over these third-party sites and disclaims all responsibility for their content, availability, or practices regarding the protection of personal data.',
+    legal_section5_h3_2: 'Incoming links',
+    legal_section5_p2: 'Creating hyperlinks to the Site requires prior written authorization from Travel With Us LTD. This authorization can be requested by email at: contact@ouiitravel.com',
+    legal_section6_title: '6. Personal Data Protection',
+    legal_section6_p1: 'Information regarding the collection, processing, and protection of your personal data is detailed in our Privacy Policy.',
+    legal_section6_p2: 'In accordance with the General Data Protection Regulation (GDPR), you have a right of access, rectification, deletion, and opposition concerning your personal data. To exercise these rights, contact us at: contact@ouiitravel.com',
+    legal_section7_title: '7. Cookies',
+    legal_section7_p1: 'The Site uses cookies to improve user experience and analyze traffic. You can manage your cookie preferences through your browser settings.',
+    legal_section7_p2: 'For more information about our use of cookies, see our Privacy Policy - Cookies Section.',
+    legal_section8_title: '8. Applicable Law and Jurisdiction',
+    legal_section8_p1: 'These legal notices are governed by Mauritian law. Any dispute relating to the use of the Site will be subject to the exclusive jurisdiction of the courts of Mauritius.',
+    legal_section8_p2: 'In case of dispute, an amicable solution will be sought before any legal action. Failing an amicable agreement, the dispute will be brought before the competent courts of Mauritius.',
+    legal_section9_title: '9. Modification of Legal Notice',
+    legal_section9_p1: 'Travel With Us LTD reserves the right to modify these legal notices at any time. Modifications take effect upon their publication on the Site. It is advisable to regularly consult this page to be aware of any modifications.',
+    legal_section9_p2: 'Date of last modification: February 10, 2026',
+    legal_contact_title: 'Legal questions?',
+    legal_contact_text: 'For any questions regarding these legal notices or the use of the site, our team is at your disposal.'
   },
   
   de: {
@@ -738,7 +844,60 @@ const TRANSLATIONS = {
     contact_box_text: 'Unser Team steht Ihnen zur Verfügung, um alle Ihre Fragen zu dieser Datenschutzerklärung oder der Verwendung Ihrer Daten zu beantworten.',
     contact_email_btn: 'E-Mail senden',
     contact_whatsapp_btn: 'WhatsApp',
-    back_home_btn: 'Zurück zur Startseite'
+    back_home_btn: 'Zurück zur Startseite',
+    
+    // ===== IMPRESSUM =====
+    breadcrumb_legal: 'Impressum',
+    legal_title: 'Impressum',
+    legal_subtitle: 'Rechtliche und juristische Informationen über unser Unternehmen',
+    legal_section1_title: '1. Herausgeber der Website',
+    legal_company_name_label: 'Firmenname:',
+    legal_address_label: 'Sitz:',
+    legal_email_label: 'E-Mail:',
+    legal_phone_label: 'Telefon:',
+    legal_section1_p1: 'Die Website travelwithus.mu (im Folgenden "die Website") wird herausgegeben von Travel With Us LTD, einem in Mauritius unter der Nummer BRN C25225204 registrierten Unternehmen.',
+    legal_director_label: 'Verantwortlich für die Veröffentlichung:',
+    legal_director: 'Leitung von Travel With Us LTD',
+    legal_section1_p2: 'Verantwortlich für die Veröffentlichung: Leitung von Travel With Us LTD',
+    legal_section2_title: '2. Website-Hosting',
+    legal_section2_p1: 'Die Website wird gehostet von:',
+    legal_host_title: 'Hosting-Informationen',
+    legal_host_name_label: 'Name:',
+    legal_host_address_label: 'Adresse:',
+    legal_host_website_label: 'Website:',
+    legal_section3_title: '3. Geistiges Eigentum',
+    legal_section3_p1: 'Alle Inhalte auf der Website, einschließlich, aber nicht beschränkt auf Texte, Bilder, Grafiken, Logos, Symbole, Sounds, Software und deren Formatierung, sind das ausschließliche Eigentum von Travel With Us LTD oder unterliegen einer Nutzungsgenehmigung.',
+    legal_section3_p2: 'Jede Reproduktion, Darstellung, Änderung, Veröffentlichung, vollständige oder teilweise Anpassung der Website-Elemente, unabhängig vom verwendeten Mittel oder Verfahren, ist ohne vorherige schriftliche Genehmigung von Travel With Us LTD verboten.',
+    legal_section3_p3: 'Jede unbefugte Nutzung der Website oder ihres Inhalts würde die Verantwortung des Benutzers begründen und eine Fälschung darstellen, die durch das Gesetzbuch über geistiges Eigentum sanktioniert wird.',
+    legal_section3_h3: 'Marken und Logos',
+    legal_section3_p4: 'Die auf der Website erscheinenden Marken und Logos sind eingetragene oder nicht eingetragene Marken von Travel With Us LTD. Jede vollständige oder teilweise Reproduktion dieser Marken oder Logos ohne vorherige Genehmigung ist verboten.',
+    legal_section4_title: '4. Haftungsbeschränkung',
+    legal_section4_p1: 'Travel With Us LTD bemüht sich, die Genauigkeit und Aktualität der auf der Website verbreiteten Informationen sicherzustellen. Wir können jedoch nicht die Genauigkeit, Präzision oder Vollständigkeit der auf dieser Website bereitgestellten Informationen garantieren.',
+    legal_section4_p2: 'Travel With Us LTD kann nicht für direkte oder indirekte Schäden haftbar gemacht werden, die sich aus dem Zugriff auf oder der Nutzung der Website ergeben, einschließlich insbesondere:',
+    legal_section4_li1: 'Vorübergehende oder dauerhafte Unzugänglichkeit der Website',
+    legal_section4_li2: 'Betrügerische Nutzung der Website durch Dritte',
+    legal_section4_li3: 'Durch Computerviren verursachte Schäden',
+    legal_section4_li4: 'Unmöglichkeit, auf die Website aufgrund ungeeigneter Hardware oder Software zuzugreifen',
+    legal_section4_p3: 'Der Benutzer erkennt an, die Website auf eigenes Risiko und unter seiner ausschließlichen Verantwortung zu nutzen.',
+    legal_section5_title: '5. Hyperlinks',
+    legal_section5_h3_1: 'Ausgehende Links',
+    legal_section5_p1: 'Die Website kann Hyperlinks zu anderen Websites enthalten. Travel With Us LTD hat keine Kontrolle über diese Websites Dritter und lehnt jede Verantwortung für deren Inhalt, Verfügbarkeit oder Praktiken in Bezug auf den Schutz personenbezogener Daten ab.',
+    legal_section5_h3_2: 'Eingehende Links',
+    legal_section5_p2: 'Das Erstellen von Hyperlinks zur Website erfordert die vorherige schriftliche Genehmigung von Travel With Us LTD. Diese Genehmigung kann per E-Mail angefordert werden unter: contact@ouiitravel.com',
+    legal_section6_title: '6. Schutz personenbezogener Daten',
+    legal_section6_p1: 'Informationen zur Erfassung, Verarbeitung und zum Schutz Ihrer personenbezogenen Daten sind in unserer Datenschutzerklärung detailliert aufgeführt.',
+    legal_section6_p2: 'Gemäß der Datenschutz-Grundverordnung (DSGVO) haben Sie ein Recht auf Zugang, Berichtigung, Löschung und Widerspruch in Bezug auf Ihre personenbezogenen Daten. Um diese Rechte auszuüben, kontaktieren Sie uns unter: contact@ouiitravel.com',
+    legal_section7_title: '7. Cookies',
+    legal_section7_p1: 'Die Website verwendet Cookies, um die Benutzererfahrung zu verbessern und den Verkehr zu analysieren. Sie können Ihre Cookie-Präferenzen über Ihre Browser-Einstellungen verwalten.',
+    legal_section7_p2: 'Weitere Informationen über unsere Verwendung von Cookies finden Sie in unserer Datenschutzerklärung - Abschnitt Cookies.',
+    legal_section8_title: '8. Anwendbares Recht und Gerichtsstand',
+    legal_section8_p1: 'Dieses Impressum unterliegt dem mauritischen Recht. Alle Streitigkeiten im Zusammenhang mit der Nutzung der Website unterliegen der ausschließlichen Zuständigkeit der Gerichte von Mauritius.',
+    legal_section8_p2: 'Im Streitfall wird vor rechtlichen Schritten eine gütliche Lösung angestrebt. Wenn keine gütliche Einigung erzielt wird, wird der Streit vor die zuständigen Gerichte von Mauritius gebracht.',
+    legal_section9_title: '9. Änderung des Impressums',
+    legal_section9_p1: 'Travel With Us LTD behält sich das Recht vor, dieses Impressum jederzeit zu ändern. Änderungen treten mit ihrer Veröffentlichung auf der Website in Kraft. Es wird empfohlen, diese Seite regelmäßig zu konsultieren, um über mögliche Änderungen informiert zu sein.',
+    legal_section9_p2: 'Datum der letzten Änderung: 10. Februar 2026',
+    legal_contact_title: 'Rechtliche Fragen?',
+    legal_contact_text: 'Bei Fragen zu diesem Impressum oder zur Nutzung der Website steht Ihnen unser Team zur Verfügung.'
   }
 };
 
@@ -1155,7 +1314,7 @@ document.head.appendChild(styles);
 // =================== INITIALISATION ===================
 document.addEventListener('DOMContentLoaded', () => {
   console.log('%c🏝️ TRAVEL WITH US', 'font-size: 24px; font-weight: bold; color: #28b8bd;');
-  console.log('%c✨ Version Complète avec Traductions Confidentialité', 'font-size: 14px; color: #9FC8B6;');
+  console.log('%c✨ Version FINALE avec Confidentialité + Mentions Légales', 'font-size: 14px; color: #9FC8B6;');
   console.log('%c📞 WhatsApp: +230 5512 2352', 'font-size: 12px; color: #666;');
   console.log('%c📧 Email: contact@ouiitravel.com', 'font-size: 12px; color: #666;');
 
@@ -1174,7 +1333,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log('✅ Tous les modules initialisés');
   console.log('🌍 Langues: FR, EN, DE');
-  console.log('🎯 Page Confidentialité : Traductions complètes activées\n');
+  console.log('🎯 Pages traduites: Index + Confidentialité + Mentions Légales\n');
 });
 
 // =================== GESTION ERREURS ===================
@@ -1188,7 +1347,7 @@ window.addEventListener('offline', () => console.warn('⚠️ Connexion perdue')
 
 // =================== EXPORT GLOBAL ===================
 window.TravelWithUs = {
-  version: '9.0.0',
+  version: '10.0.0-FINAL',
   config: CONFIG,
   utils: { debounce, smoothScroll },
   translations: TRANSLATIONS
