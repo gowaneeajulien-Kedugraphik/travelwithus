@@ -3,28 +3,28 @@ const CONFIG = {
   whatsappNumber: '23055122352',
   email: 'contact@ouiitravel.com',
   defaultLanguage: 'fr',
-  scrollOffset: 100,
+  scrollOffset: 100,  // Ajusté pour le header fixe
   debounceDelay: 300
 };
 
-// =================== TRADUCTIONS COMPLÈTES ===================
+// =================== TRADUCTIONS COMPLÈTES (FR/EN/DE) ===================
 const TRANSLATIONS = {
   fr: {
-    // Menu
+    // ===== MENU =====
     menu_villas: 'Nos Villas',
     menu_destinations: 'Destinations',
     menu_activities: 'Activités',
     menu_about: 'À propos',
     menu_contact: 'Contact',
     
-    // Hero
+    // ===== HERO =====
     hero_badge: 'Plus de 150 villas d\'exception à l\'Île Maurice',
     hero_title: 'Votre Villa de Rêve à l\'Île Maurice',
     hero_subtitle: 'Découvrez nos villas d\'exception avec piscine privée, vue sur mer et service premium dans les plus belles régions de Maurice.',
     cta_discover: 'Découvrir nos Villas',
     cta_whatsapp: 'WhatsApp',
     
-    // Formulaire
+    // ===== FORMULAIRE =====
     form_name: 'Nom complet',
     form_email: 'Email',
     form_phone: 'Téléphone',
@@ -35,7 +35,7 @@ const TRANSLATIONS = {
     subject_info: 'Demande d\'information',
     subject_other: 'Autre',
     
-    // Steps
+    // ===== STEPS (3 ÉTAPES) =====
     steps_title: 'Réservez en 3 Étapes',
     steps_subtitle: 'Un processus simple et rapide pour votre séjour de rêve',
     step1_title: 'Recherchez',
@@ -45,14 +45,14 @@ const TRANSLATIONS = {
     step3_title: 'Confirmez',
     step3_text: 'Recevez votre confirmation avec tous les détails et profitez de votre séjour avec notre conciergerie 24/7.',
     
-    // Villas
+    // ===== VILLAS =====
     villas_title: 'Nos Villas d\'Exception',
     villas_subtitle: 'Sélection des meilleures villas dans toutes les régions de Maurice',
     spec_guests: 'voyageurs',
     spec_bedrooms: 'chambres',
     btn_contact: 'Contactez-nous',
     
-    // Destinations
+    // ===== DESTINATIONS =====
     dest_main_title: 'Découvrez les Régions de l\'Île Maurice',
     dest_main_subtitle: 'Quatre destinations uniques, chacune avec son charme et ses avantages',
     
@@ -88,7 +88,7 @@ const TRANSLATIONS = {
     dest_west_adv4: 'Pêche au gros à Rivière Noire, capitale mondiale',
     dest_west_adv5: 'Ambiance locale authentique et prix attractifs',
     
-    // Activités
+    // ===== ACTIVITÉS =====
     activities_main_title: 'Activités & Excursions à Maurice',
     activities_main_subtitle: 'Des expériences inoubliables pour rendre votre séjour unique',
     
@@ -110,7 +110,7 @@ const TRANSLATIONS = {
     activity_diving_title: 'Plongée & Snorkeling',
     activity_diving_desc: 'Explorez les récifs coralliens, épaves historiques et grottes sous-marines. Rencontrez tortues, raies et poissons tropicaux dans des eaux cristallines.',
     
-    // À propos
+    // ===== À PROPOS =====
     about_label: 'Qui sommes-nous ?',
     about_company_title: 'Travel With Us - Votre Spécialiste Villas à Maurice',
     about_p1: 'Depuis 2018, Travel With Us est votre partenaire de confiance pour la location de villas de luxe à l\'Île Maurice. Nous sélectionnons avec soin les plus belles propriétés de l\'île dans les quatre régions : Nord animé, Sud sauvage, Est paradisiaque et Ouest authentique.',
@@ -137,7 +137,7 @@ const TRANSLATIONS = {
     feature6_title: 'Conciergerie Premium',
     feature6_text: 'Services personnalisés disponibles.',
     
-    // Contact
+    // ===== CONTACT =====
     contact_title: 'Contactez-nous',
     contact_subtitle: 'Notre équipe locale est à votre écoute pour organiser votre séjour',
     contact_whatsapp_title: 'WhatsApp',
@@ -145,7 +145,7 @@ const TRANSLATIONS = {
     contact_hours_title: 'Horaires',
     contact_hours_text: 'Lundi - Dimanche : 8h00 - 20h00',
     
-    // Footer
+    // ===== FOOTER =====
     footer_contact: 'Contactez-nous',
     footer_destinations: 'Destinations',
     footer_north: 'Nord - Grand Baie',
@@ -159,7 +159,7 @@ const TRANSLATIONS = {
     footer_privacy: 'Confidentialité',
     footer_legal: 'Mentions légales',
     footer_faq: 'Aide & FAQ',
-    footer_rights: 'Tous droits réservés.',footer_rights: 'Tous droits réservés.',
+    footer_rights: 'Tous droits réservés.',
     
     // ===== PAGE CONFIDENTIALITÉ =====
     breadcrumb_home: 'Accueil',
@@ -307,7 +307,6 @@ const TRANSLATIONS = {
     // Destinations
     dest_main_title: 'Discover the Regions of Mauritius',
     dest_main_subtitle: 'Four unique destinations, each with its charm and advantages',
-    
     dest_north_title: 'The North - Entertainment & Nightlife',
     dest_north_intro: 'The tourist heart of Mauritius where entertainment meets paradise beaches.',
     dest_north_adv1: 'White sand beaches and turquoise lagoon',
@@ -315,7 +314,6 @@ const TRANSLATIONS = {
     dest_north_adv3: 'Water sports: water skiing, parasailing',
     dest_north_adv4: 'Shopping and malls nearby',
     dest_north_adv5: 'Easy access to northern islands by catamaran',
-    
     dest_south_title: 'The South - Wild Nature & Authenticity',
     dest_south_intro: 'A preserved region where majestic nature meets Mauritian history.',
     dest_south_adv1: 'Le Morne Brabant, UNESCO site and world kitesurf spot',
@@ -323,7 +321,6 @@ const TRANSLATIONS = {
     dest_south_adv3: 'Mauritian authenticity away from mass tourism',
     dest_south_adv4: 'Wild beaches and preserved lagoons',
     dest_south_adv5: 'Close to Chamarel and Seven Colored Earths',
-    
     dest_east_title: 'The East - Dream Beaches & Tranquility',
     dest_east_intro: 'The most beautiful beaches of Mauritius with crystal-clear lagoon.',
     dest_east_adv1: 'Postcard beaches with pristine white sand',
@@ -331,7 +328,6 @@ const TRANSLATIONS = {
     dest_east_adv3: 'Ideal lagoon for snorkeling and diving',
     dest_east_adv4: 'International luxury resorts and spas',
     dest_east_adv5: 'Calm and relaxing atmosphere, perfect to recharge',
-    
     dest_west_title: 'The West - Sunsets & Local Life',
     dest_west_intro: 'Spectacular sunsets in an authentic and relaxed atmosphere.',
     dest_west_adv1: 'Sunsets among the most beautiful in the world',
@@ -343,22 +339,16 @@ const TRANSLATIONS = {
     // Activities
     activities_main_title: 'Activities & Excursions in Mauritius',
     activities_main_subtitle: 'Unforgettable experiences to make your stay unique',
-    
     activity_heli_title: 'Helicopter Tour',
     activity_heli_desc: 'Fly over Mauritius and admire the turquoise lagoon, underwater waterfalls in the south and Le Morne Brabant from the sky. A unique and spectacular perspective of the island.',
-    
     activity_seaplane_title: 'Seaplane Flight',
     activity_seaplane_desc: 'Takeoff and landing on the lagoon for a unique adventure. Discover the northern islets and coral reefs in exceptional comfort.',
-    
     activity_catamaran_title: 'Catamaran Cruise',
     activity_catamaran_desc: 'Paradise day to Ile aux Cerfs or northern islands. Snorkeling, barbecue on board and sailing on crystal-clear waters. Unforgettable!',
-    
     activity_quad_title: 'Quad Safari',
     activity_quad_desc: 'Explore the inland, sugar cane plantations and authentic villages. Thrills guaranteed on off-the-beaten-path trails.',
-    
     activity_zipline_title: 'Ziplines & Adventure',
     activity_zipline_desc: 'Fly above the Mauritian canopy in adventure parks. Giant ziplines, suspension bridges and extreme sensations in the heart of nature.',
-    
     activity_diving_title: 'Diving & Snorkeling',
     activity_diving_desc: 'Explore coral reefs, historic wrecks and underwater caves. Meet turtles, rays and tropical fish in crystal-clear waters.',
     
@@ -368,12 +358,10 @@ const TRANSLATIONS = {
     about_p1: 'Since 2018, Travel With Us has been your trusted partner for luxury villa rentals in Mauritius. We carefully select the most beautiful properties on the island in all four regions: lively North, wild South, paradise East and authentic West.',
     about_p2: 'Our local expertise allows us to offer you villas with private pool, sea view and premium services adapted to all budgets. Whether you are looking for a family villa in Grand Baie, a romantic property in Le Morne or a haven of peace in Belle Mare, we have the perfect villa for you.',
     about_p3: 'Mauritian team available 24/7, we accompany you from A to Z: simplified booking, tailor-made concierge, activities and excursions, airport transfers. Our mission? To make you live unforgettable holidays in Mauritius with complete peace of mind.',
-    
     stat_villas: 'Premium Villas',
     stat_clients: 'Satisfied Clients',
     stat_support: 'Local Support',
     stat_years: 'Years of Expertise',
-    
     why_title: 'Why Travel With Us?',
     why_subtitle: 'The advantages that make the difference',
     feature1_title: 'Secure Payment',
@@ -411,7 +399,106 @@ const TRANSLATIONS = {
     footer_privacy: 'Privacy',
     footer_legal: 'Legal Notice',
     footer_faq: 'Help & FAQ',
-    footer_rights: 'All rights reserved.'
+    footer_rights: 'All rights reserved.',
+    
+    // Privacy Page
+    breadcrumb_home: 'Home',
+    breadcrumb_privacy: 'Privacy',
+    privacy_title: 'Privacy Policy',
+    privacy_subtitle: 'We respect your privacy and protect your personal data',
+    last_update_label: 'Last updated:',
+    last_update_date: 'February 10, 2026',
+    section1_title: '1. Introduction',
+    section1_p1: 'Travel With Us LTD (hereinafter "we", "our" or "Travel With Us") is committed to protecting and respecting your privacy. This privacy policy explains how we collect, use, share and protect your personal data when you use our website and villa rental services in Mauritius.',
+    section1_p2: 'By using our website or contacting us, you accept the practices described in this policy. If you do not accept these terms, please do not use our services.',
+    company_info_title: 'Company Information',
+    company_address_label: 'Address:',
+    company_address: 'Tamarin, Mauritius',
+    company_phone_label: 'Phone:',
+    section2_title: '2. Data We Collect',
+    section2_h3_1: '2.1. Data You Provide Directly',
+    section2_p1: 'When you use our services, we may collect the following information:',
+    section2_li1: 'Identification information: name, surname, email address, phone number',
+    section2_li2: 'Booking information: stay dates, number of travelers, villa preferences',
+    section2_li3: 'Payment information: transaction details (via our secure payment providers)',
+    section2_li4: 'Communications: messages sent via our contact form, WhatsApp or email',
+    section2_li5: 'Reviews and feedback: testimonials you share with us',
+    section2_h3_2: '2.2. Automatically Collected Data',
+    section2_p2: 'When you visit our website, we automatically collect:',
+    section2_li6: 'Browsing data: IP address, browser type, operating system, pages visited',
+    section2_li7: 'Cookies and similar technologies: to improve your experience (see Cookies section)',
+    section2_li8: 'Location data: country and city (if you allow geolocation)',
+    section2_li9: 'Usage statistics: interactions with the site, clicks, visit duration',
+    section3_title: '3. How We Use Your Data',
+    section3_p1: 'We use your personal data for the following purposes:',
+    section3_li1: 'Booking management: process your requests, confirm your bookings and manage your stay',
+    section3_li2: 'Customer communication: answer your questions, send you confirmations and updates',
+    section3_li3: 'Service improvement: analyze site usage to improve our offerings',
+    section3_li4: 'Marketing (with your consent): send you special offers and newsletters',
+    section3_li5: 'Legal obligations: comply with our tax and regulatory obligations',
+    section3_li6: 'Security: prevent fraud and protect our systems',
+    legal_basis_title: 'Legal Basis for Processing (GDPR)',
+    legal_basis_text: 'We process your data based on: (a) contract execution (booking), (b) your consent (marketing), (c) our legitimate interests (service improvement), and (d) our legal obligations (accounting).',
+    section4_title: '4. Sharing Your Data',
+    section4_p1: 'We never sell your personal data to third parties. We may share your information only with:',
+    section4_li1: 'Villa owners: to organize your stay (name, dates, number of travelers)',
+    section4_li2: 'Service providers: secure payment, web hosting, communication tools',
+    section4_li3: 'Tourism partners: activity and excursion agencies (only if you book through us)',
+    section4_li4: 'Competent authorities: if required by law (police, justice, tax administration)',
+    section4_p2: 'All our partners are contractually bound to protect your data and use it only for specified purposes.',
+    section5_title: '5. Cookies and Similar Technologies',
+    section5_p1: 'Our site uses cookies to improve your experience. A cookie is a small text file stored on your device.',
+    section5_h3_1: 'Types of cookies used:',
+    section5_li1: 'Essential cookies: necessary for site operation (language choice, cart)',
+    section5_li2: 'Analytics cookies: to understand how you use the site (Google Analytics)',
+    section5_li3: 'Marketing cookies: to personalize ads (with your consent)',
+    section5_control_label: 'Cookie control:',
+    section5_control_text: 'You can manage or delete cookies through your browser settings. Note that disabling certain cookies may affect site functionality.',
+    section5_p2: 'Cookie control: You can manage or delete cookies through your browser settings. Note that disabling certain cookies may affect site functionality.',
+    section6_title: '6. Data Security',
+    section6_p1: 'We take the security of your data very seriously and implement appropriate technical and organizational measures:',
+    section6_li1: 'SSL/TLS encryption for all sensitive data transmissions',
+    section6_li2: 'Secure hosting with regular backups',
+    section6_li3: 'Restricted access to personal data (least privilege principle)',
+    section6_li4: 'Monitoring and detection of intrusion attempts',
+    section6_li5: 'Regular training of our team on data protection',
+    section6_p2: 'However, no method of transmission over the Internet is completely secure. We cannot guarantee absolute security.',
+    section7_title: '7. Your Rights (GDPR)',
+    section7_p1: 'In accordance with the General Data Protection Regulation (GDPR), you have the following rights:',
+    section7_li1: 'Right of access: obtain a copy of your personal data',
+    section7_li2: 'Right to rectification: correct inaccurate or incomplete data',
+    section7_li3: 'Right to erasure: request deletion of your data (under certain conditions)',
+    section7_li4: 'Right to restriction: restrict processing of your data',
+    section7_li5: 'Right to portability: receive your data in a structured format',
+    section7_li6: 'Right to object: object to processing of your data (particularly marketing)',
+    section7_li7: 'Right to withdraw consent: at any time',
+    section7_exercise_label: 'To exercise these rights:',
+    section7_exercise_text: 'Contact us by email at contact@ouiitravel.com with the subject "Exercise of my GDPR rights". We will respond within 30 days maximum.',
+    section7_p2: 'To exercise these rights: Contact us by email at contact@ouiitravel.com with the subject "Exercise of my GDPR rights". We will respond within 30 days maximum.',
+    section7_complaint_label: 'Right to complaint:',
+    section7_complaint_text: 'If you believe your rights are not being respected, you can file a complaint with the Mauritius Data Protection Commission or your local data protection authority.',
+    section7_p3: 'Right to complaint: If you believe your rights are not being respected, you can file a complaint with the Mauritius Data Protection Commission or your local data protection authority.',
+    section8_title: '8. Data Retention Period',
+    section8_p1: 'We retain your personal data only for the time necessary for the purposes for which it was collected:',
+    section8_li1: 'Booking data: 10 years (accounting and tax obligations)',
+    section8_li2: 'Marketing data: 3 years after your last contact with us',
+    section8_li3: 'Analytics cookies: 13 months maximum',
+    section8_li4: 'Connection logs: 12 months (security)',
+    section8_p2: 'At the end of these periods, your data is deleted or anonymized irreversibly.',
+    section9_title: '9. International Data Transfers',
+    section9_p1: 'Our servers and some of our service providers are located outside Mauritius, particularly in the European Union and the United States. When we transfer your data outside Mauritius, we ensure that:',
+    section9_li1: 'The country has an adequacy decision from the European Commission, or',
+    section9_li2: 'Appropriate safeguards are in place (standard contractual clauses, Privacy Shield, etc.)',
+    section10_title: '10. Protection of Minors',
+    section10_p1: 'Our services are not intended for persons under 18 years of age. We do not knowingly collect personal data from minors. If you are a parent or guardian and discover that your child has provided us with personal data without your consent, contact us immediately.',
+    section11_title: '11. Changes to This Policy',
+    section11_p1: 'We may update this privacy policy occasionally to reflect changes in our practices or for legal reasons. The most recent version will always be available on this page with the last update date at the top.',
+    section11_p2: 'In case of substantial changes, we will inform you by email (if we have your address) or via a notification on our website.',
+    contact_box_title: 'Questions about your personal data?',
+    contact_box_text: 'Our team is available to answer all your questions about this privacy policy or the use of your data.',
+    contact_email_btn: 'Send an email',
+    contact_whatsapp_btn: 'WhatsApp',
+    back_home_btn: 'Back to home'
   },
   
   de: {
@@ -460,7 +547,6 @@ const TRANSLATIONS = {
     // Destinations
     dest_main_title: 'Entdecken Sie die Regionen von Mauritius',
     dest_main_subtitle: 'Vier einzigartige Reiseziele, jedes mit seinem Charme und Vorteilen',
-    
     dest_north_title: 'Der Norden - Unterhaltung & Nachtleben',
     dest_north_intro: 'Das touristische Herz von Mauritius, wo Unterhaltung auf Paradiesstrände trifft.',
     dest_north_adv1: 'Weiße Sandstrände und türkisfarbene Lagune',
@@ -468,7 +554,6 @@ const TRANSLATIONS = {
     dest_north_adv3: 'Wassersport: Wasserski, Parasailing',
     dest_north_adv4: 'Einkaufsmöglichkeiten in der Nähe',
     dest_north_adv5: 'Einfacher Zugang zu nördlichen Inseln per Katamaran',
-    
     dest_south_title: 'Der Süden - Wilde Natur & Authentizität',
     dest_south_intro: 'Eine erhaltene Region, wo majestätische Natur auf mauritische Geschichte trifft.',
     dest_south_adv1: 'Le Morne Brabant, UNESCO-Stätte und Welt-Kitesurf-Spot',
@@ -476,7 +561,6 @@ const TRANSLATIONS = {
     dest_south_adv3: 'Mauritische Authentizität abseits des Massentourismus',
     dest_south_adv4: 'Wilde Strände und unberührte Lagunen',
     dest_south_adv5: 'Nähe zu Chamarel und der Siebenfarbigen Erde',
-    
     dest_east_title: 'Der Osten - Traumstrände & Ruhe',
     dest_east_intro: 'Die schönsten Strände von Mauritius mit kristallklarer Lagune.',
     dest_east_adv1: 'Postkarten-Strände mit unberührtem weißen Sand',
@@ -484,7 +568,6 @@ const TRANSLATIONS = {
     dest_east_adv3: 'Ideale Lagune zum Schnorcheln und Tauchen',
     dest_east_adv4: 'Internationale Luxusresorts und Spas',
     dest_east_adv5: 'Ruhige und entspannende Atmosphäre, perfekt zum Auftanken',
-    
     dest_west_title: 'Der Westen - Sonnenuntergänge & Lokales Leben',
     dest_west_intro: 'Spektakuläre Sonnenuntergänge in authentischer und entspannter Atmosphäre.',
     dest_west_adv1: 'Sonnenuntergänge zu den schönsten der Welt',
@@ -496,22 +579,16 @@ const TRANSLATIONS = {
     // Activities
     activities_main_title: 'Aktivitäten & Ausflüge auf Mauritius',
     activities_main_subtitle: 'Unvergessliche Erlebnisse für Ihren einzigartigen Aufenthalt',
-    
     activity_heli_title: 'Hubschrauber-Tour',
     activity_heli_desc: 'Überfliegen Sie Mauritius und bewundern Sie die türkisfarbene Lagune, die Unterwasserwasserfälle im Süden und Le Morne Brabant vom Himmel. Eine einzigartige und spektakuläre Perspektive der Insel.',
-    
     activity_seaplane_title: 'Wasserflugzeug-Flug',
     activity_seaplane_desc: 'Start und Landung auf der Lagune für ein einzigartiges Abenteuer. Entdecken Sie die nördlichen Inseln und Korallenriffe in außergewöhnlichem Komfort.',
-    
     activity_catamaran_title: 'Katamaran-Kreuzfahrt',
     activity_catamaran_desc: 'Paradiesischer Tag zur Ile aux Cerfs oder den nördlichen Inseln. Schnorcheln, Grillen an Bord und Segeln auf kristallklarem Wasser. Unvergesslich!',
-    
     activity_quad_title: 'Quad-Safari',
     activity_quad_desc: 'Erkunden Sie das Landesinnere, Zuckerrohrplantagen und authentische Dörfer. Nervenkitzel garantiert auf abgelegenen Pfaden.',
-    
     activity_zipline_title: 'Seilrutschen & Abenteuer',
     activity_zipline_desc: 'Fliegen Sie über die mauritische Baumkrone in Abenteuerparks. Riesige Seilrutschen, Hängebrücken und extreme Empfindungen im Herzen der Natur.',
-    
     activity_diving_title: 'Tauchen & Schnorcheln',
     activity_diving_desc: 'Erkunden Sie Korallenriffe, historische Wracks und Unterwasserhöhlen. Treffen Sie Schildkröten, Rochen und tropische Fische in kristallklarem Wasser.',
     
@@ -521,12 +598,10 @@ const TRANSLATIONS = {
     about_p1: 'Seit 2018 ist Travel With Us Ihr vertrauenswürdiger Partner für Luxusvillen-Vermietung auf Mauritius. Wir wählen sorgfältig die schönsten Immobilien der Insel in allen vier Regionen aus: lebendiger Norden, wilder Süden, paradiesischer Osten und authentischer Westen.',
     about_p2: 'Unsere lokale Expertise ermöglicht es uns, Ihnen Villen mit privatem Pool, Meerblick und Premium-Services anzubieten, die für alle Budgets geeignet sind. Ob Sie eine Familienvilla in Grand Baie, eine romantische Immobilie in Le Morne oder eine Oase der Ruhe in Belle Mare suchen, wir haben die perfekte Villa für Sie.',
     about_p3: 'Mauritisches Team rund um die Uhr verfügbar, wir begleiten Sie von A bis Z: vereinfachte Buchung, maßgeschneiderter Concierge, Aktivitäten und Ausflüge, Flughafentransfers. Unsere Mission? Sie erleben unvergessliche Ferien auf Mauritius in völliger Gelassenheit.',
-    
     stat_villas: 'Premium-Villen',
     stat_clients: 'Zufriedene Kunden',
     stat_support: 'Lokaler Support',
     stat_years: 'Jahre Erfahrung',
-    
     why_title: 'Warum Travel With Us?',
     why_subtitle: 'Die Vorteile, die den Unterschied machen',
     feature1_title: 'Sichere Zahlung',
@@ -564,7 +639,106 @@ const TRANSLATIONS = {
     footer_privacy: 'Datenschutz',
     footer_legal: 'Impressum',
     footer_faq: 'Hilfe & FAQ',
-    footer_rights: 'Alle Rechte vorbehalten.'
+    footer_rights: 'Alle Rechte vorbehalten.',
+    
+    // Privacy Page
+    breadcrumb_home: 'Startseite',
+    breadcrumb_privacy: 'Datenschutz',
+    privacy_title: 'Datenschutzerklärung',
+    privacy_subtitle: 'Wir respektieren Ihre Privatsphäre und schützen Ihre persönlichen Daten',
+    last_update_label: 'Letzte Aktualisierung:',
+    last_update_date: '10. Februar 2026',
+    section1_title: '1. Einführung',
+    section1_p1: 'Travel With Us LTD (im Folgenden "wir", "unser" oder "Travel With Us") verpflichtet sich, Ihre Privatsphäre zu schützen und zu respektieren. Diese Datenschutzerklärung erklärt, wie wir Ihre persönlichen Daten sammeln, verwenden, weitergeben und schützen, wenn Sie unsere Website und unsere Villa-Vermietungsdienste auf Mauritius nutzen.',
+    section1_p2: 'Durch die Nutzung unserer Website oder die Kontaktaufnahme mit uns akzeptieren Sie die in dieser Richtlinie beschriebenen Praktiken. Wenn Sie diese Bedingungen nicht akzeptieren, verwenden Sie bitte unsere Dienste nicht.',
+    company_info_title: 'Unternehmensinformationen',
+    company_address_label: 'Adresse:',
+    company_address: 'Tamarin, Mauritius',
+    company_phone_label: 'Telefon:',
+    section2_title: '2. Daten, die wir sammeln',
+    section2_h3_1: '2.1. Daten, die Sie direkt bereitstellen',
+    section2_p1: 'Wenn Sie unsere Dienste nutzen, können wir folgende Informationen sammeln:',
+    section2_li1: 'Identifikationsinformationen: Name, Vorname, E-Mail-Adresse, Telefonnummer',
+    section2_li2: 'Buchungsinformationen: Aufenthaltsdaten, Anzahl der Reisenden, Villa-Präferenzen',
+    section2_li3: 'Zahlungsinformationen: Transaktionsdetails (über unsere sicheren Zahlungsanbieter)',
+    section2_li4: 'Kommunikation: Nachrichten, die über unser Kontaktformular, WhatsApp oder E-Mail gesendet werden',
+    section2_li5: 'Bewertungen und Feedback: Testimonials, die Sie mit uns teilen',
+    section2_h3_2: '2.2. Automatisch gesammelte Daten',
+    section2_p2: 'Wenn Sie unsere Website besuchen, sammeln wir automatisch:',
+    section2_li6: 'Navigationsdaten: IP-Adresse, Browsertyp, Betriebssystem, besuchte Seiten',
+    section2_li7: 'Cookies und ähnliche Technologien: um Ihre Erfahrung zu verbessern (siehe Abschnitt Cookies)',
+    section2_li8: 'Standortdaten: Land und Stadt (wenn Sie Geolokalisierung zulassen)',
+    section2_li9: 'Nutzungsstatistiken: Interaktionen mit der Website, Klicks, Besuchsdauer',
+    section3_title: '3. Wie wir Ihre Daten verwenden',
+    section3_p1: 'Wir verwenden Ihre persönlichen Daten für folgende Zwecke:',
+    section3_li1: 'Buchungsverwaltung: Bearbeitung Ihrer Anfragen, Bestätigung Ihrer Buchungen und Verwaltung Ihres Aufenthalts',
+    section3_li2: 'Kundenkommunikation: Beantwortung Ihrer Fragen, Versand von Bestätigungen und Updates',
+    section3_li3: 'Serviceverbesserung: Analyse der Website-Nutzung zur Verbesserung unserer Angebote',
+    section3_li4: 'Marketing (mit Ihrer Zustimmung): Versand von Sonderangeboten und Newslettern',
+    section3_li5: 'Rechtliche Verpflichtungen: Einhaltung unserer steuerlichen und regulatorischen Verpflichtungen',
+    section3_li6: 'Sicherheit: Betrugsprävention und Schutz unserer Systeme',
+    legal_basis_title: 'Rechtsgrundlage für die Verarbeitung (DSGVO)',
+    legal_basis_text: 'Wir verarbeiten Ihre Daten auf der Grundlage von: (a) Vertragserfüllung (Buchung), (b) Ihrer Zustimmung (Marketing), (c) unseren berechtigten Interessen (Serviceverbesserung) und (d) unseren rechtlichen Verpflichtungen (Buchhaltung).',
+    section4_title: '4. Weitergabe Ihrer Daten',
+    section4_p1: 'Wir verkaufen niemals Ihre persönlichen Daten an Dritte. Wir können Ihre Informationen nur weitergeben an:',
+    section4_li1: 'Villa-Eigentümer: um Ihren Aufenthalt zu organisieren (Name, Daten, Anzahl der Reisenden)',
+    section4_li2: 'Dienstleister: sichere Zahlung, Webhosting, Kommunikationstools',
+    section4_li3: 'Tourismuspartner: Aktivitäts- und Exkursionsagenturen (nur wenn Sie über uns buchen)',
+    section4_li4: 'Zuständige Behörden: wenn gesetzlich vorgeschrieben (Polizei, Justiz, Steuerverwaltung)',
+    section4_p2: 'Alle unsere Partner sind vertraglich verpflichtet, Ihre Daten zu schützen und nur für die angegebenen Zwecke zu verwenden.',
+    section5_title: '5. Cookies und ähnliche Technologien',
+    section5_p1: 'Unsere Website verwendet Cookies, um Ihre Erfahrung zu verbessern. Ein Cookie ist eine kleine Textdatei, die auf Ihrem Gerät gespeichert wird.',
+    section5_h3_1: 'Arten von verwendeten Cookies:',
+    section5_li1: 'Wesentliche Cookies: notwendig für den Betrieb der Website (Sprachwahl, Warenkorb)',
+    section5_li2: 'Analytics-Cookies: um zu verstehen, wie Sie die Website nutzen (Google Analytics)',
+    section5_li3: 'Marketing-Cookies: um Werbung zu personalisieren (mit Ihrer Zustimmung)',
+    section5_control_label: 'Cookie-Kontrolle:',
+    section5_control_text: 'Sie können Cookies über Ihre Browser-Einstellungen verwalten oder löschen. Beachten Sie, dass das Deaktivieren bestimmter Cookies die Funktionalität der Website beeinträchtigen kann.',
+    section5_p2: 'Cookie-Kontrolle: Sie können Cookies über Ihre Browser-Einstellungen verwalten oder löschen. Beachten Sie, dass das Deaktivieren bestimmter Cookies die Funktionalität der Website beeinträchtigen kann.',
+    section6_title: '6. Datensicherheit',
+    section6_p1: 'Wir nehmen die Sicherheit Ihrer Daten sehr ernst und setzen angemessene technische und organisatorische Maßnahmen um:',
+    section6_li1: 'SSL/TLS-Verschlüsselung für alle sensiblen Datenübertragungen',
+    section6_li2: 'Sicheres Hosting mit regelmäßigen Backups',
+    section6_li3: 'Eingeschränkter Zugriff auf persönliche Daten (Prinzip der geringsten Berechtigung)',
+    section6_li4: 'Überwachung und Erkennung von Angriffsversuchen',
+    section6_li5: 'Regelmäßige Schulung unseres Teams zum Datenschutz',
+    section6_p2: 'Allerdings ist keine Übertragungsmethode über das Internet völlig sicher. Wir können keine absolute Sicherheit garantieren.',
+    section7_title: '7. Ihre Rechte (DSGVO)',
+    section7_p1: 'Gemäß der Datenschutz-Grundverordnung (DSGVO) haben Sie folgende Rechte:',
+    section7_li1: 'Auskunftsrecht: eine Kopie Ihrer persönlichen Daten erhalten',
+    section7_li2: 'Recht auf Berichtigung: ungenaue oder unvollständige Daten korrigieren',
+    section7_li3: 'Recht auf Löschung: Löschung Ihrer Daten beantragen (unter bestimmten Bedingungen)',
+    section7_li4: 'Recht auf Einschränkung: Verarbeitung Ihrer Daten einschränken',
+    section7_li5: 'Recht auf Datenübertragbarkeit: Ihre Daten in einem strukturierten Format erhalten',
+    section7_li6: 'Widerspruchsrecht: der Verarbeitung Ihrer Daten widersprechen (insbesondere Marketing)',
+    section7_li7: 'Recht auf Widerruf der Einwilligung: jederzeit',
+    section7_exercise_label: 'Um diese Rechte auszuüben:',
+    section7_exercise_text: 'Kontaktieren Sie uns per E-Mail an contact@ouiitravel.com mit dem Betreff "Ausübung meiner DSGVO-Rechte". Wir antworten innerhalb von maximal 30 Tagen.',
+    section7_p2: 'Um diese Rechte auszuüben: Kontaktieren Sie uns per E-Mail an contact@ouiitravel.com mit dem Betreff "Ausübung meiner DSGVO-Rechte". Wir antworten innerhalb von maximal 30 Tagen.',
+    section7_complaint_label: 'Beschwerderecht:',
+    section7_complaint_text: 'Wenn Sie der Meinung sind, dass Ihre Rechte nicht respektiert werden, können Sie eine Beschwerde bei der Mauritius Data Protection Commission oder Ihrer lokalen Datenschutzbehörde einreichen.',
+    section7_p3: 'Beschwerderecht: Wenn Sie der Meinung sind, dass Ihre Rechte nicht respektiert werden, können Sie eine Beschwerde bei der Mauritius Data Protection Commission oder Ihrer lokalen Datenschutzbehörde einreichen.',
+    section8_title: '8. Dauer der Datenspeicherung',
+    section8_p1: 'Wir bewahren Ihre persönlichen Daten nur so lange auf, wie es für die Zwecke erforderlich ist, für die sie erhoben wurden:',
+    section8_li1: 'Buchungsdaten: 10 Jahre (buchhalterische und steuerliche Verpflichtungen)',
+    section8_li2: 'Marketingdaten: 3 Jahre nach Ihrem letzten Kontakt mit uns',
+    section8_li3: 'Analytics-Cookies: maximal 13 Monate',
+    section8_li4: 'Verbindungsprotokolle: 12 Monate (Sicherheit)',
+    section8_p2: 'Am Ende dieser Zeiträume werden Ihre Daten unwiderruflich gelöscht oder anonymisiert.',
+    section9_title: '9. Internationale Datenübertragungen',
+    section9_p1: 'Unsere Server und einige unserer Dienstleister befinden sich außerhalb von Mauritius, insbesondere in der Europäischen Union und den Vereinigten Staaten. Wenn wir Ihre Daten außerhalb von Mauritius übertragen, stellen wir sicher, dass:',
+    section9_li1: 'Das Land über einen Angemessenheitsbeschluss der Europäischen Kommission verfügt, oder',
+    section9_li2: 'Angemessene Garantien vorhanden sind (Standardvertragsklauseln, Privacy Shield usw.)',
+    section10_title: '10. Schutz von Minderjährigen',
+    section10_p1: 'Unsere Dienste richten sich nicht an Personen unter 18 Jahren. Wir sammeln wissentlich keine persönlichen Daten von Minderjährigen. Wenn Sie Elternteil oder Erziehungsberechtigter sind und feststellen, dass Ihr Kind uns ohne Ihre Zustimmung persönliche Daten zur Verfügung gestellt hat, kontaktieren Sie uns bitte umgehend.',
+    section11_title: '11. Änderungen dieser Richtlinie',
+    section11_p1: 'Wir können diese Datenschutzerklärung gelegentlich aktualisieren, um Änderungen in unseren Praktiken oder aus rechtlichen Gründen zu berücksichtigen. Die aktuellste Version wird immer auf dieser Seite mit dem Datum der letzten Aktualisierung oben verfügbar sein.',
+    section11_p2: 'Bei wesentlichen Änderungen werden wir Sie per E-Mail informieren (wenn wir Ihre Adresse haben) oder über eine Benachrichtigung auf unserer Website.',
+    contact_box_title: 'Fragen zu Ihren persönlichen Daten?',
+    contact_box_text: 'Unser Team steht Ihnen zur Verfügung, um alle Ihre Fragen zu dieser Datenschutzerklärung oder der Verwendung Ihrer Daten zu beantworten.',
+    contact_email_btn: 'E-Mail senden',
+    contact_whatsapp_btn: 'WhatsApp',
+    back_home_btn: 'Zurück zur Startseite'
   }
 };
 
@@ -981,7 +1155,7 @@ document.head.appendChild(styles);
 // =================== INITIALISATION ===================
 document.addEventListener('DOMContentLoaded', () => {
   console.log('%c🏝️ TRAVEL WITH US', 'font-size: 24px; font-weight: bold; color: #28b8bd;');
-  console.log('%c✨ Version Complète avec Destinations & Activités', 'font-size: 14px; color: #9FC8B6;');
+  console.log('%c✨ Version Complète avec Traductions Confidentialité', 'font-size: 14px; color: #9FC8B6;');
   console.log('%c📞 WhatsApp: +230 5512 2352', 'font-size: 12px; color: #666;');
   console.log('%c📧 Email: contact@ouiitravel.com', 'font-size: 12px; color: #666;');
 
@@ -1000,7 +1174,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log('✅ Tous les modules initialisés');
   console.log('🌍 Langues: FR, EN, DE');
-  console.log('🎯 Nouvelles sections: Destinations + Activités + À propos enrichi\n');
+  console.log('🎯 Page Confidentialité : Traductions complètes activées\n');
 });
 
 // =================== GESTION ERREURS ===================
@@ -1014,7 +1188,7 @@ window.addEventListener('offline', () => console.warn('⚠️ Connexion perdue')
 
 // =================== EXPORT GLOBAL ===================
 window.TravelWithUs = {
-  version: '8.0.0',
+  version: '9.0.0',
   config: CONFIG,
   utils: { debounce, smoothScroll },
   translations: TRANSLATIONS
