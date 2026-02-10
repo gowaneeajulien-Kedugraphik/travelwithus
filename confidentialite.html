@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Politique de confidentialité de Travel With Us Ltd - Protection des données personnelles et respect de votre vie privée." />
+  <meta name="description" content="Politique de confidentialité - Travel With Us. Protection de vos données personnelles et respect du RGPD." />
   <meta name="robots" content="index, follow" />
   
-  <title>Politique de Confidentialité | Travel With Us - Villas Île Maurice</title>
+  <title>Politique de Confidentialité | Travel With Us - Location Villas Maurice</title>
   
   <!-- Favicon -->
   <link rel="icon" href="./assets/images/Logo.webp" type="image/webp" />
@@ -25,11 +25,77 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   
   <style>
-    /* Styles spécifiques pour la page confidentialité */
-    .privacy-page {
-      padding: 120px 0 80px;
+    /* Styles spécifiques page confidentialité */
+    body {
+      padding-top: 72px;
+    }
+    
+    .privacy-hero {
+      background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand) 100%);
+      padding: 80px 0 60px;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .privacy-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920') center/cover;
+      opacity: 0.1;
+      z-index: 0;
+    }
+    
+    .privacy-hero-content {
+      position: relative;
+      z-index: 10;
+    }
+    
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 14px;
+      margin-bottom: 24px;
+      opacity: 0.9;
+    }
+    
+    .breadcrumb a {
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    
+    .breadcrumb a:hover {
+      opacity: 0.7;
+    }
+    
+    .breadcrumb i {
+      font-size: 12px;
+    }
+    
+    .privacy-hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 800;
+      margin: 0 0 16px;
+    }
+    
+    .privacy-hero p {
+      font-size: 16px;
+      opacity: 0.95;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .privacy-content {
+      padding: 80px 0;
       background: var(--white);
-      min-height: 100vh;
     }
     
     .privacy-container {
@@ -38,128 +104,117 @@
       padding: 0 20px;
     }
     
-    .privacy-header {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    
-    .privacy-title {
-      font-size: clamp(32px, 5vw, 48px);
-      font-weight: 800;
-      color: var(--brand-dark);
-      margin: 0 0 16px;
-    }
-    
-    .privacy-subtitle {
-      font-size: 16px;
+    .last-update {
+      background: var(--brand-light);
+      border-left: 4px solid var(--brand);
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 40px;
+      font-size: 14px;
       color: var(--text-light);
     }
     
-    .privacy-content {
-      background: white;
-      padding: 40px;
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-md);
-      border: 1px solid rgba(0, 0, 0, 0.08);
+    .last-update strong {
+      color: var(--brand-dark);
+      font-weight: 600;
     }
     
-    .privacy-content h2 {
-      font-size: 24px;
+    .privacy-section {
+      margin-bottom: 48px;
+    }
+    
+    .privacy-section h2 {
+      font-size: 28px;
       font-weight: 700;
       color: var(--brand-dark);
-      margin: 40px 0 16px;
-      padding-top: 20px;
-      border-top: 2px solid var(--brand-light);
+      margin: 0 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--brand-light);
     }
     
-    .privacy-content h2:first-child {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
-    }
-    
-    .privacy-content h3 {
-      font-size: 18px;
+    .privacy-section h3 {
+      font-size: 20px;
       font-weight: 600;
-      color: var(--brand);
+      color: var(--brand-dark);
       margin: 24px 0 12px;
     }
     
-    .privacy-content p {
+    .privacy-section p {
       font-size: 15px;
       line-height: 1.8;
       color: var(--text-light);
       margin: 0 0 16px;
     }
     
-    .privacy-content ul {
+    .privacy-section ul,
+    .privacy-section ol {
       margin: 16px 0;
       padding-left: 24px;
     }
     
-    .privacy-content li {
+    .privacy-section li {
       font-size: 15px;
       line-height: 1.8;
       color: var(--text-light);
       margin-bottom: 8px;
     }
     
-    .privacy-content strong {
+    .privacy-section strong {
       color: var(--brand-dark);
       font-weight: 600;
     }
     
-    .privacy-info-box {
-      background: var(--brand-light);
-      padding: 24px;
+    .info-box {
+      background: #f8f9fa;
+      border: 1px solid #e5e7eb;
       border-radius: var(--radius-md);
+      padding: 20px;
       margin: 24px 0;
-      border-left: 4px solid var(--brand);
     }
     
-    .privacy-info-box p {
-      margin: 8px 0;
+    .info-box h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--brand);
+      margin: 0 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
     
-    .privacy-highlight {
-      background: #fff3cd;
-      border-left: 4px solid #ffc107;
-      padding: 16px 20px;
-      margin: 20px 0;
-      border-radius: var(--radius-sm);
-    }
-    
-    .privacy-highlight p {
+    .info-box p {
       margin: 0;
-      color: #856404;
-      font-weight: 500;
-    }
-    
-    .privacy-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
       font-size: 14px;
     }
     
-    .privacy-table th,
-    .privacy-table td {
-      padding: 12px;
-      text-align: left;
-      border: 1px solid #e5e7eb;
+    .contact-box {
+      background: linear-gradient(135deg, var(--brand-light), white);
+      border: 2px solid var(--brand);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin: 48px 0;
+      text-align: center;
     }
     
-    .privacy-table th {
-      background: var(--brand-light);
+    .contact-box h3 {
+      font-size: 24px;
       color: var(--brand-dark);
-      font-weight: 600;
+      margin: 0 0 16px;
     }
     
-    .privacy-table tr:hover {
-      background: #f9fafb;
+    .contact-box p {
+      margin: 0 0 24px;
+      font-size: 15px;
     }
     
-    .privacy-back-btn {
+    .contact-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .contact-link {
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -169,36 +224,63 @@
       text-decoration: none;
       border-radius: var(--radius-sm);
       font-weight: 600;
+      font-size: 14px;
       transition: var(--transition);
-      margin-top: 40px;
     }
     
-    .privacy-back-btn:hover {
-      background: #1e9ba5;
+    .contact-link:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
     }
     
+    .contact-link.secondary {
+      background: white;
+      color: var(--brand);
+      border: 2px solid var(--brand);
+    }
+    
+    .back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      background: white;
+      color: var(--brand);
+      text-decoration: none;
+      border: 2px solid var(--brand);
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 15px;
+      transition: var(--transition);
+      margin-top: 40px;
+    }
+    
+    .back-home:hover {
+      background: var(--brand);
+      color: white;
+      transform: translateY(-2px);
+    }
+    
     @media (max-width: 768px) {
+      .privacy-hero {
+        padding: 60px 0 40px;
+      }
+      
       .privacy-content {
-        padding: 24px;
+        padding: 60px 0;
       }
       
-      .privacy-content h2 {
-        font-size: 20px;
+      .privacy-section h2 {
+        font-size: 24px;
       }
       
-      .privacy-content h3 {
-        font-size: 16px;
+      .contact-links {
+        flex-direction: column;
       }
       
-      .privacy-table {
-        font-size: 13px;
-      }
-      
-      .privacy-table th,
-      .privacy-table td {
-        padding: 8px;
+      .contact-link {
+        width: 100%;
+        justify-content: center;
       }
     }
   </style>
@@ -211,17 +293,17 @@
     <div class="container header-container">
       
       <!-- Logo -->
-      <a class="brand" href="./index.html" aria-label="Travel With Us - Accueil">
+      <a class="brand" href="index.html" aria-label="Travel With Us - Accueil">
         <img src="./assets/images/Logo.webp" alt="Travel With Us" class="logo" />
       </a>
 
       <!-- Navigation -->
       <nav class="nav-main" aria-label="Navigation principale">
-        <a href="./index.html#villas" data-translate="menu_villas">Nos Villas</a>
-        <a href="./index.html#destinations" data-translate="menu_destinations">Destinations</a>
-        <a href="./index.html#activites" data-translate="menu_activities">Activités</a>
-        <a href="./index.html#about" data-translate="menu_about">À propos</a>
-        <a href="./index.html#contact" data-translate="menu_contact">Contact</a>
+        <a href="index.html#villas" data-translate="menu_villas">Nos Villas</a>
+        <a href="index.html#destinations" data-translate="menu_destinations">Destinations</a>
+        <a href="index.html#activites" data-translate="menu_activities">Activités</a>
+        <a href="index.html#about" data-translate="menu_about">À propos</a>
+        <a href="index.html#contact" data-translate="menu_contact">Contact</a>
       </nav>
 
       <!-- Actions -->
@@ -268,11 +350,11 @@
 
     <!-- Menu mobile -->
     <nav class="mobile-menu" id="mobileMenu">
-      <a href="./index.html#villas" data-translate="menu_villas"><i class="fas fa-home"></i> Nos Villas</a>
-      <a href="./index.html#destinations" data-translate="menu_destinations"><i class="fas fa-map-marked-alt"></i> Destinations</a>
-      <a href="./index.html#activites" data-translate="menu_activities"><i class="fas fa-umbrella-beach"></i> Activités</a>
-      <a href="./index.html#about" data-translate="menu_about"><i class="fas fa-info-circle"></i> À propos</a>
-      <a href="./index.html#contact" data-translate="menu_contact"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="index.html#villas" data-translate="menu_villas"><i class="fas fa-home"></i> Nos Villas</a>
+      <a href="index.html#destinations" data-translate="menu_destinations"><i class="fas fa-map-marked-alt"></i> Destinations</a>
+      <a href="index.html#activites" data-translate="menu_activities"><i class="fas fa-umbrella-beach"></i> Activités</a>
+      <a href="index.html#about" data-translate="menu_about"><i class="fas fa-info-circle"></i> À propos</a>
+      <a href="index.html#contact" data-translate="menu_contact"><i class="fas fa-envelope"></i> Contact</a>
       <a href="https://wa.me/23055122352" class="mobile-whatsapp" target="_blank">
         <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
       </a>
@@ -286,343 +368,253 @@
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- =================== CONTENU CONFIDENTIALITÉ =================== -->
-  <main class="privacy-page">
+  <!-- =================== HERO =================== -->
+  <section class="privacy-hero">
+    <div class="privacy-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html" data-translate="breadcrumb_home">Accueil</a>
+        <i class="fas fa-chevron-right"></i>
+        <span data-translate="breadcrumb_privacy">Confidentialité</span>
+      </div>
+      
+      <h1 data-translate="privacy_title">Politique de Confidentialité</h1>
+      <p data-translate="privacy_subtitle">Nous respectons votre vie privée et protégeons vos données personnelles</p>
+    </div>
+  </section>
+
+  <!-- =================== CONTENU =================== -->
+  <section class="privacy-content">
     <div class="privacy-container">
       
-      <div class="privacy-header">
-        <h1 class="privacy-title">Politique de Confidentialité</h1>
-        <p class="privacy-subtitle">Dernière mise à jour : Février 2025</p>
+      <!-- Dernière mise à jour -->
+      <div class="last-update">
+        <strong data-translate="last_update_label">Dernière mise à jour :</strong> 
+        <span data-translate="last_update_date">10 février 2026</span>
       </div>
 
-      <div class="privacy-content">
+      <!-- Section 1 : Introduction -->
+      <div class="privacy-section">
+        <h2 data-translate="section1_title">1. Introduction</h2>
+        <p data-translate="section1_p1">
+          <strong>Travel With Us LTD</strong> (ci-après "nous", "notre" ou "Travel With Us") s'engage à protéger et respecter votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons, partageons et protégeons vos données personnelles lorsque vous utilisez notre site web et nos services de location de villas à l'Île Maurice.
+        </p>
+        <p data-translate="section1_p2">
+          En utilisant notre site web ou en nous contactant, vous acceptez les pratiques décrites dans cette politique. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser nos services.
+        </p>
         
-        <!-- INTRODUCTION -->
-        <h2>1. Introduction</h2>
-        <p><strong>Travel With Us Ltd</strong> (ci-après "nous", "notre" ou "Travel With Us") s'engage à protéger la vie privée et les données personnelles de ses utilisateurs conformément à la législation mauricienne sur la protection des données.</p>
-        <p>La présente politique de confidentialité décrit comment nous collectons, utilisons, conservons et protégeons vos informations personnelles lorsque vous utilisez notre site web <strong>www.ouiitravel.com</strong> et nos services de location de villas.</p>
-        
-        <div class="privacy-highlight">
-          <p><strong>⚠️ Important :</strong> En utilisant notre site web et nos services, vous acceptez les termes de cette politique de confidentialité.</p>
+        <div class="info-box">
+          <h4><i class="fas fa-building"></i> <span data-translate="company_info_title">Informations sur notre entreprise</span></h4>
+          <p>
+            <strong>Nom légal :</strong> Travel With Us LTD<br>
+            <strong>BRN :</strong> C25225204<br>
+            <strong data-translate="company_address_label">Adresse :</strong> <span data-translate="company_address">Tamarin, Mauritius</span><br>
+            <strong>Email :</strong> contact@ouiitravel.com<br>
+            <strong data-translate="company_phone_label">Téléphone :</strong> +230 5512 2352
+          </p>
         </div>
+      </div>
 
-        <!-- RESPONSABLE -->
-        <h2>2. Responsable du traitement des données</h2>
-        <div class="privacy-info-box">
-          <p><strong>Raison sociale :</strong> Travel With Us Ltd</p>
-          <p><strong>Numéro BRN :</strong> C25225204</p>
-          <p><strong>Adresse :</strong> Tamarin, Mauritius</p>
-          <p><strong>Email :</strong> <a href="mailto:contact@ouiitravel.com" style="color: var(--brand);">contact@ouiitravel.com</a></p>
-          <p><strong>Téléphone :</strong> <a href="tel:+23055122352" style="color: var(--brand);">+230 5512 2352</a></p>
+      <!-- Section 2 : Données collectées -->
+      <div class="privacy-section">
+        <h2 data-translate="section2_title">2. Données que nous collectons</h2>
+        
+        <h3 data-translate="section2_h3_1">2.1. Données que vous nous fournissez directement</h3>
+        <p data-translate="section2_p1">Lorsque vous utilisez nos services, nous pouvons collecter les informations suivantes :</p>
+        <ul>
+          <li data-translate="section2_li1"><strong>Informations d'identification :</strong> nom, prénom, adresse email, numéro de téléphone</li>
+          <li data-translate="section2_li2"><strong>Informations de réservation :</strong> dates de séjour, nombre de voyageurs, préférences de villa</li>
+          <li data-translate="section2_li3"><strong>Informations de paiement :</strong> détails de transaction (via nos prestataires de paiement sécurisés)</li>
+          <li data-translate="section2_li4"><strong>Communications :</strong> messages envoyés via notre formulaire de contact, WhatsApp ou email</li>
+          <li data-translate="section2_li5"><strong>Avis et commentaires :</strong> témoignages que vous partagez avec nous</li>
+        </ul>
+        
+        <h3 data-translate="section2_h3_2">2.2. Données collectées automatiquement</h3>
+        <p data-translate="section2_p2">Lorsque vous visitez notre site web, nous collectons automatiquement :</p>
+        <ul>
+          <li data-translate="section2_li6"><strong>Données de navigation :</strong> adresse IP, type de navigateur, système d'exploitation, pages visitées</li>
+          <li data-translate="section2_li7"><strong>Cookies et technologies similaires :</strong> pour améliorer votre expérience (voir section Cookies)</li>
+          <li data-translate="section2_li8"><strong>Données de localisation :</strong> pays et ville (si vous autorisez la géolocalisation)</li>
+          <li data-translate="section2_li9"><strong>Statistiques d'utilisation :</strong> interactions avec le site, clics, durée de visite</li>
+        </ul>
+      </div>
+
+      <!-- Section 3 : Utilisation des données -->
+      <div class="privacy-section">
+        <h2 data-translate="section3_title">3. Comment nous utilisons vos données</h2>
+        <p data-translate="section3_p1">Nous utilisons vos données personnelles pour les finalités suivantes :</p>
+        <ol>
+          <li data-translate="section3_li1"><strong>Gestion des réservations :</strong> traiter vos demandes, confirmer vos réservations et gérer votre séjour</li>
+          <li data-translate="section3_li2"><strong>Communication client :</strong> répondre à vos questions, vous envoyer des confirmations et mises à jour</li>
+          <li data-translate="section3_li3"><strong>Amélioration des services :</strong> analyser l'utilisation du site pour améliorer nos offres</li>
+          <li data-translate="section3_li4"><strong>Marketing (avec votre consentement) :</strong> vous envoyer des offres spéciales et newsletters</li>
+          <li data-translate="section3_li5"><strong>Obligations légales :</strong> respecter nos obligations fiscales et réglementaires</li>
+          <li data-translate="section3_li6"><strong>Sécurité :</strong> prévenir la fraude et protéger nos systèmes</li>
+        </ol>
+        
+        <div class="info-box">
+          <h4><i class="fas fa-balance-scale"></i> <span data-translate="legal_basis_title">Base légale du traitement (RGPD)</span></h4>
+          <p data-translate="legal_basis_text">
+            Nous traitons vos données sur la base de : <strong>(a)</strong> l'exécution d'un contrat (réservation), <strong>(b)</strong> votre consentement (marketing), <strong>(c)</strong> nos intérêts légitimes (amélioration des services), et <strong>(d)</strong> nos obligations légales (comptabilité).
+          </p>
         </div>
+      </div>
 
-        <!-- DONNÉES COLLECTÉES -->
-        <h2>3. Données personnelles collectées</h2>
+      <!-- Section 4 : Partage des données -->
+      <div class="privacy-section">
+        <h2 data-translate="section4_title">4. Partage de vos données</h2>
+        <p data-translate="section4_p1">
+          Nous ne vendons jamais vos données personnelles à des tiers. Nous pouvons partager vos informations uniquement avec :
+        </p>
+        <ul>
+          <li data-translate="section4_li1"><strong>Propriétaires de villas :</strong> pour organiser votre séjour (nom, dates, nombre de voyageurs)</li>
+          <li data-translate="section4_li2"><strong>Prestataires de services :</strong> paiement sécurisé, hébergement web, outils de communication</li>
+          <li data-translate="section4_li3"><strong>Partenaires touristiques :</strong> agences d'activités et excursions (uniquement si vous réservez via nous)</li>
+          <li data-translate="section4_li4"><strong>Autorités compétentes :</strong> si requis par la loi (police, justice, administration fiscale)</li>
+        </ul>
+        <p data-translate="section4_p2">
+          Tous nos partenaires sont contractuellement tenus de protéger vos données et de les utiliser uniquement aux fins spécifiées.
+        </p>
+      </div>
+
+      <!-- Section 5 : Cookies -->
+      <div class="privacy-section">
+        <h2 data-translate="section5_title">5. Cookies et technologies similaires</h2>
+        <p data-translate="section5_p1">
+          Notre site utilise des cookies pour améliorer votre expérience. Un cookie est un petit fichier texte stocké sur votre appareil.
+        </p>
         
-        <h3>3.1 Données collectées directement</h3>
-        <p>Nous collectons les données que vous nous fournissez volontairement via :</p>
+        <h3 data-translate="section5_h3_1">Types de cookies utilisés :</h3>
+        <ul>
+          <li data-translate="section5_li1"><strong>Cookies essentiels :</strong> nécessaires au fonctionnement du site (choix de langue, panier)</li>
+          <li data-translate="section5_li2"><strong>Cookies analytiques :</strong> pour comprendre comment vous utilisez le site (Google Analytics)</li>
+          <li data-translate="section5_li3"><strong>Cookies marketing :</strong> pour personnaliser les publicités (avec votre consentement)</li>
+        </ul>
         
-        <table class="privacy-table">
-          <thead>
-            <tr>
-              <th>Type de données</th>
-              <th>Finalité</th>
-              <th>Base légale</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Nom et prénom</td>
-              <td>Identification et communication</td>
-              <td>Exécution du contrat</td>
-            </tr>
-            <tr>
-              <td>Adresse email</td>
-              <td>Communication et confirmation de réservation</td>
-              <td>Exécution du contrat</td>
-            </tr>
-            <tr>
-              <td>Numéro de téléphone</td>
-              <td>Contact en cas d'urgence ou questions</td>
-              <td>Exécution du contrat</td>
-            </tr>
-            <tr>
-              <td>Dates de séjour</td>
-              <td>Gestion de la réservation</td>
-              <td>Exécution du contrat</td>
-            </tr>
-            <tr>
-              <td>Préférences de villa</td>
-              <td>Personnalisation du service</td>
-              <td>Intérêt légitime</td>
-            </tr>
-            <tr>
-              <td>Messages et demandes</td>
-              <td>Support client et amélioration des services</td>
-              <td>Intérêt légitime</td>
-            </tr>
-          </tbody>
-        </table>
+        <p data-translate="section5_p2">
+          <strong data-translate="section5_control_label">Contrôle des cookies :</strong> 
+          <span data-translate="section5_control_text">Vous pouvez gérer ou supprimer les cookies via les paramètres de votre navigateur. Notez que la désactivation de certains cookies peut affecter les fonctionnalités du site.</span>
+        </p>
+      </div>
 
-        <h3>3.2 Données collectées automatiquement</h3>
-        <p>Lors de votre visite sur notre site web, nous collectons automatiquement certaines informations techniques :</p>
+      <!-- Section 6 : Sécurité -->
+      <div class="privacy-section">
+        <h2 data-translate="section6_title">6. Sécurité de vos données</h2>
+        <p data-translate="section6_p1">
+          Nous prenons la sécurité de vos données très au sérieux et mettons en œuvre des mesures techniques et organisationnelles appropriées :
+        </p>
         <ul>
-          <li><strong>Adresse IP</strong></li>
-          <li><strong>Type de navigateur</strong> et version</li>
-          <li><strong>Système d'exploitation</strong></li>
-          <li><strong>Pages visitées</strong> et durée de visite</li>
-          <li><strong>Langue préférée</strong></li>
-          <li><strong>Date et heure</strong> de connexion</li>
+          <li data-translate="section6_li1">Cryptage SSL/TLS pour toutes les transmissions de données sensibles</li>
+          <li data-translate="section6_li2">Hébergement sécurisé avec sauvegardes régulières</li>
+          <li data-translate="section6_li3">Accès restreint aux données personnelles (principe du moindre privilège)</li>
+          <li data-translate="section6_li4">Surveillance et détection des tentatives d'intrusion</li>
+          <li data-translate="section6_li5">Formation régulière de notre équipe sur la protection des données</li>
         </ul>
+        <p data-translate="section6_p2">
+          Cependant, aucune méthode de transmission sur Internet n'est totalement sécurisée. Nous ne pouvons garantir une sécurité absolue.
+        </p>
+      </div>
 
-        <!-- FINALITÉS -->
-        <h2>4. Finalités du traitement</h2>
-        <p>Nous utilisons vos données personnelles exclusivement pour les finalités suivantes :</p>
+      <!-- Section 7 : Vos droits -->
+      <div class="privacy-section">
+        <h2 data-translate="section7_title">7. Vos droits (RGPD)</h2>
+        <p data-translate="section7_p1">
+          Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :
+        </p>
+        <ul>
+          <li data-translate="section7_li1"><strong>Droit d'accès :</strong> obtenir une copie de vos données personnelles</li>
+          <li data-translate="section7_li2"><strong>Droit de rectification :</strong> corriger des données inexactes ou incomplètes</li>
+          <li data-translate="section7_li3"><strong>Droit à l'effacement :</strong> demander la suppression de vos données (sous certaines conditions)</li>
+          <li data-translate="section7_li4"><strong>Droit à la limitation :</strong> restreindre le traitement de vos données</li>
+          <li data-translate="section7_li5"><strong>Droit à la portabilité :</strong> recevoir vos données dans un format structuré</li>
+          <li data-translate="section7_li6"><strong>Droit d'opposition :</strong> vous opposer au traitement de vos données (notamment marketing)</li>
+          <li data-translate="section7_li7"><strong>Droit de retirer votre consentement :</strong> à tout moment</li>
+        </ul>
         
-        <h3>4.1 Gestion des réservations</h3>
-        <ul>
-          <li>Traiter et confirmer vos réservations de villas</li>
-          <li>Vous envoyer des confirmations et rappels</li>
-          <li>Gérer les paiements et facturations</li>
-          <li>Communiquer avec vous concernant votre séjour</li>
-        </ul>
-
-        <h3>4.2 Service client</h3>
-        <ul>
-          <li>Répondre à vos questions et demandes d'information</li>
-          <li>Fournir une assistance avant, pendant et après votre séjour</li>
-          <li>Résoudre d'éventuels problèmes ou réclamations</li>
-        </ul>
-
-        <h3>4.3 Amélioration des services</h3>
-        <ul>
-          <li>Analyser l'utilisation du site pour améliorer l'expérience utilisateur</li>
-          <li>Personnaliser les recommandations de villas</li>
-          <li>Développer de nouveaux services adaptés à vos besoins</li>
-        </ul>
-
-        <h3>4.4 Marketing (avec votre consentement)</h3>
-        <ul>
-          <li>Vous envoyer des offres spéciales et promotions</li>
-          <li>Partager des actualités sur nos nouvelles villas</li>
-          <li>Vous informer d'événements ou activités à Maurice</li>
-        </ul>
-        <p><strong>Note :</strong> Vous pouvez vous désabonner à tout moment en cliquant sur le lien de désinscription dans nos emails.</p>
-
-        <!-- PARTAGE DES DONNÉES -->
-        <h2>5. Partage et transmission des données</h2>
+        <p data-translate="section7_p2">
+          <strong data-translate="section7_exercise_label">Pour exercer ces droits :</strong> 
+          <span data-translate="section7_exercise_text">Contactez-nous par email à contact@ouiitravel.com avec la mention "Exercice de mes droits RGPD". Nous répondrons dans un délai de 30 jours maximum.</span>
+        </p>
         
-        <h3>5.1 Principe de non-transmission</h3>
-        <p><strong>Travel With Us Ltd</strong> ne vend, ne loue ni n'échange vos données personnelles à des tiers à des fins commerciales.</p>
+        <p data-translate="section7_p3">
+          <strong data-translate="section7_complaint_label">Droit de réclamation :</strong> 
+          <span data-translate="section7_complaint_text">Si vous estimez que vos droits ne sont pas respectés, vous pouvez déposer une plainte auprès de la Commission de Protection des Données de Maurice ou de votre autorité locale de protection des données.</span>
+        </p>
+      </div>
 
-        <h3>5.2 Partenaires de confiance</h3>
-        <p>Nous pouvons partager vos données avec des prestataires de services tiers uniquement pour les finalités suivantes :</p>
+      <!-- Section 8 : Conservation -->
+      <div class="privacy-section">
+        <h2 data-translate="section8_title">8. Durée de conservation des données</h2>
+        <p data-translate="section8_p1">Nous conservons vos données personnelles uniquement le temps nécessaire aux finalités pour lesquelles elles ont été collectées :</p>
         <ul>
-          <li><strong>Propriétaires de villas :</strong> Pour faciliter votre séjour (nom, dates, nombre de personnes)</li>
-          <li><strong>Services de paiement :</strong> Pour traiter vos transactions de manière sécurisée</li>
-          <li><strong>Hébergement web :</strong> GitHub Pages (États-Unis) pour l'hébergement du site</li>
-          <li><strong>Services email :</strong> Pour vous envoyer des confirmations et communications</li>
+          <li data-translate="section8_li1"><strong>Données de réservation :</strong> 10 ans (obligations comptables et fiscales)</li>
+          <li data-translate="section8_li2"><strong>Données marketing :</strong> 3 ans après votre dernier contact avec nous</li>
+          <li data-translate="section8_li3"><strong>Cookies analytiques :</strong> 13 mois maximum</li>
+          <li data-translate="section8_li4"><strong>Logs de connexion :</strong> 12 mois (sécurité)</li>
         </ul>
+        <p data-translate="section8_p2">
+          À l'issue de ces périodes, vos données sont supprimées ou anonymisées de manière irréversible.
+        </p>
+      </div>
 
-        <h3>5.3 Obligations légales</h3>
-        <p>Nous pouvons divulguer vos informations si la loi l'exige ou en réponse à une demande légale valable des autorités mauriciennes.</p>
-
-        <!-- SÉCURITÉ -->
-        <h2>6. Sécurité des données</h2>
-        <p>Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos données personnelles contre :</p>
+      <!-- Section 9 : Transferts internationaux -->
+      <div class="privacy-section">
+        <h2 data-translate="section9_title">9. Transferts internationaux de données</h2>
+        <p data-translate="section9_p1">
+          Nos serveurs et certains de nos prestataires de services sont situés hors de l'Île Maurice, notamment dans l'Union Européenne et aux États-Unis. Lorsque nous transférons vos données hors de Maurice, nous nous assurons que :
+        </p>
         <ul>
-          <li>L'accès non autorisé</li>
-          <li>La perte ou la destruction accidentelle</li>
-          <li>L'utilisation, la modification ou la divulgation illicite</li>
+          <li data-translate="section9_li1">Le pays bénéficie d'une décision d'adéquation de la Commission Européenne, ou</li>
+          <li data-translate="section9_li2">Des garanties appropriées sont en place (clauses contractuelles types, Privacy Shield, etc.)</li>
         </ul>
+      </div>
 
-        <h3>6.1 Mesures techniques</h3>
-        <ul>
-          <li>✅ <strong>Cryptage SSL/TLS</strong> pour toutes les transmissions de données</li>
-          <li>✅ <strong>Serveurs sécurisés</strong> avec pare-feu et protection anti-intrusion</li>
-          <li>✅ <strong>Accès restreint</strong> aux données personnelles (personnel autorisé uniquement)</li>
-          <li>✅ <strong>Sauvegardes régulières</strong> des données</li>
-        </ul>
+      <!-- Section 10 : Mineurs -->
+      <div class="privacy-section">
+        <h2 data-translate="section10_title">10. Protection des mineurs</h2>
+        <p data-translate="section10_p1">
+          Nos services ne sont pas destinés aux personnes de moins de 18 ans. Nous ne collectons pas sciemment de données personnelles auprès de mineurs. Si vous êtes parent ou tuteur et que vous découvrez que votre enfant nous a fourni des données personnelles sans votre consentement, contactez-nous immédiatement.
+        </p>
+      </div>
 
-        <h3>6.2 Mesures organisationnelles</h3>
-        <ul>
-          <li>Formation du personnel sur la protection des données</li>
-          <li>Politiques internes strictes de confidentialité</li>
-          <li>Audits réguliers de sécurité</li>
-        </ul>
+      <!-- Section 11 : Modifications -->
+      <div class="privacy-section">
+        <h2 data-translate="section11_title">11. Modifications de cette politique</h2>
+        <p data-translate="section11_p1">
+          Nous pouvons mettre à jour cette politique de confidentialité occasionnellement pour refléter les changements dans nos pratiques ou pour des raisons légales. La version la plus récente sera toujours disponible sur cette page avec la date de dernière mise à jour en haut.
+        </p>
+        <p data-translate="section11_p2">
+          En cas de modifications substantielles, nous vous informerons par email (si nous avons votre adresse) ou via une notification sur notre site web.
+        </p>
+      </div>
 
-        <!-- CONSERVATION -->
-        <h2>7. Durée de conservation</h2>
-        <p>Nous conservons vos données personnelles uniquement pour la durée nécessaire aux finalités mentionnées :</p>
-        
-        <table class="privacy-table">
-          <thead>
-            <tr>
-              <th>Type de données</th>
-              <th>Durée de conservation</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Données de réservation</td>
-              <td>3 ans après la fin du séjour</td>
-            </tr>
-            <tr>
-              <td>Données comptables</td>
-              <td>10 ans (obligation légale)</td>
-            </tr>
-            <tr>
-              <td>Correspondance email</td>
-              <td>2 ans après le dernier échange</td>
-            </tr>
-            <tr>
-              <td>Données marketing</td>
-              <td>Jusqu'à votre désinscription</td>
-            </tr>
-            <tr>
-              <td>Logs techniques</td>
-              <td>12 mois maximum</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p>Au-delà de ces durées, vos données sont supprimées ou anonymisées de manière irréversible.</p>
-
-        <!-- VOS DROITS -->
-        <h2>8. Vos droits</h2>
-        <p>Conformément à la législation mauricienne sur la protection des données, vous disposez des droits suivants :</p>
-
-        <h3>8.1 Droit d'accès</h3>
-        <p>Vous pouvez demander à consulter toutes les données personnelles que nous détenons à votre sujet.</p>
-
-        <h3>8.2 Droit de rectification</h3>
-        <p>Vous pouvez demander la correction de données inexactes, incomplètes ou obsolètes.</p>
-
-        <h3>8.3 Droit de suppression</h3>
-        <p>Vous pouvez demander la suppression de vos données dans les cas suivants :</p>
-        <ul>
-          <li>Les données ne sont plus nécessaires aux finalités pour lesquelles elles ont été collectées</li>
-          <li>Vous retirez votre consentement</li>
-          <li>Vous vous opposez au traitement</li>
-          <li>Les données ont été traitées de manière illicite</li>
-        </ul>
-
-        <h3>8.4 Droit d'opposition</h3>
-        <p>Vous pouvez vous opposer au traitement de vos données à des fins de marketing direct à tout moment.</p>
-
-        <h3>8.5 Droit à la portabilité</h3>
-        <p>Vous pouvez demander à recevoir vos données dans un format structuré, couramment utilisé et lisible par machine.</p>
-
-        <h3>8.6 Droit de limitation du traitement</h3>
-        <p>Vous pouvez demander la limitation du traitement dans certaines circonstances (ex : contestation de l'exactitude des données).</p>
-
-        <h3>8.7 Comment exercer vos droits ?</h3>
-        <div class="privacy-info-box">
-          <p>Pour exercer l'un de ces droits, contactez-nous :</p>
-          <p><strong>Par email :</strong> <a href="mailto:contact@ouiitravel.com" style="color: var(--brand);">contact@ouiitravel.com</a></p>
-          <p><strong>Par téléphone :</strong> <a href="tel:+23055122352" style="color: var(--brand);">+230 5512 2352</a></p>
-          <p><strong>Par courrier :</strong> Travel With Us Ltd, Tamarin, Mauritius</p>
+      <!-- Section Contact -->
+      <div class="contact-box">
+        <h3 data-translate="contact_box_title">Questions sur vos données personnelles ?</h3>
+        <p data-translate="contact_box_text">
+          Notre équipe est à votre disposition pour répondre à toutes vos questions concernant cette politique de confidentialité ou l'utilisation de vos données.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:contact@ouiitravel.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span data-translate="contact_email_btn">Envoyer un email</span>
+          </a>
+          <a href="https://wa.me/23055122352?text=Question%20sur%20la%20confidentialité" class="contact-link secondary" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span data-translate="contact_whatsapp_btn">WhatsApp</span>
+          </a>
         </div>
-        <p>Nous nous engageons à répondre à votre demande dans un <strong>délai maximum de 30 jours</strong>.</p>
+      </div>
 
-        <!-- COOKIES -->
-        <h2>9. Cookies et technologies similaires</h2>
-        
-        <h3>9.1 Qu'est-ce qu'un cookie ?</h3>
-        <p>Un cookie est un petit fichier texte stocké sur votre appareil lors de votre visite sur notre site. Il permet de mémoriser vos préférences et d'améliorer votre expérience.</p>
-
-        <h3>9.2 Types de cookies utilisés</h3>
-        
-        <p><strong>🍪 Cookies strictement nécessaires</strong></p>
-        <p>Ces cookies sont indispensables au fonctionnement du site (ex : mémorisation de la langue choisie). Ils ne peuvent pas être désactivés.</p>
-
-        <p><strong>📊 Cookies analytiques</strong></p>
-        <p>Ces cookies nous aident à comprendre comment les visiteurs utilisent notre site (pages visitées, durée de visite). Nous utilisons ces données de manière anonyme pour améliorer le site.</p>
-
-        <h3>9.3 Gestion des cookies</h3>
-        <p>Vous pouvez gérer ou désactiver les cookies via les paramètres de votre navigateur :</p>
-        <ul>
-          <li><strong>Chrome :</strong> Paramètres → Confidentialité et sécurité → Cookies</li>
-          <li><strong>Firefox :</strong> Options → Vie privée et sécurité → Cookies</li>
-          <li><strong>Safari :</strong> Préférences → Confidentialité → Cookies</li>
-          <li><strong>Edge :</strong> Paramètres → Cookies et autorisations de site</li>
-        </ul>
-        <p><strong>⚠️ Attention :</strong> La désactivation de certains cookies peut limiter les fonctionnalités du site.</p>
-
-        <!-- MINEURS -->
-        <h2>10. Protection des mineurs</h2>
-        <p>Nos services sont destinés aux personnes âgées de <strong>18 ans ou plus</strong>. Nous ne collectons pas sciemment de données personnelles auprès de mineurs.</p>
-        <p>Si vous êtes un parent ou tuteur et que vous pensez que votre enfant nous a fourni des données personnelles, veuillez nous contacter immédiatement pour que nous puissions supprimer ces informations.</p>
-
-        <!-- TRANSFERTS INTERNATIONAUX -->
-        <h2>11. Transferts internationaux de données</h2>
-        <p>Vos données peuvent être transférées et stockées en dehors de Maurice, notamment :</p>
-        <ul>
-          <li><strong>États-Unis :</strong> Hébergement du site via GitHub Pages</li>
-          <li><strong>Europe :</strong> Certains prestataires de services (ex : services email)</li>
-        </ul>
-        <p>Dans tous les cas, nous veillons à ce que des garanties appropriées soient mises en place pour protéger vos données conformément aux normes internationales de protection des données.</p>
-
-        <!-- MODIFICATIONS -->
-        <h2>12. Modifications de la politique</h2>
-        <p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment pour refléter :</p>
-        <ul>
-          <li>Les changements dans nos pratiques</li>
-          <li>L'évolution de la législation</li>
-          <li>L'ajout de nouveaux services</li>
-        </ul>
-        <p>Toute modification importante sera communiquée via :</p>
-        <ul>
-          <li>✉️ Email (pour nos clients enregistrés)</li>
-          <li>🌐 Notification sur le site web</li>
-          <li>📅 Mise à jour de la date en haut de cette page</li>
-        </ul>
-        <p>Nous vous encourageons à consulter régulièrement cette page pour rester informé.</p>
-
-        <!-- RÉCLAMATIONS -->
-        <h2>13. Réclamations et litiges</h2>
-        <p>Si vous estimez que vos droits en matière de protection des données n'ont pas été respectés, vous pouvez :</p>
-
-        <h3>13.1 Nous contacter directement</h3>
-        <div class="privacy-info-box">
-          <p><strong>Email :</strong> <a href="mailto:contact@ouiitravel.com" style="color: var(--brand);">contact@ouiitravel.com</a></p>
-          <p><strong>Téléphone :</strong> <a href="tel:+23055122352" style="color: var(--brand);">+230 5512 2352</a></p>
-        </div>
-        <p>Nous nous engageons à traiter votre réclamation dans les <strong>30 jours</strong> suivant sa réception.</p>
-
-        <h3>13.2 Saisir l'autorité compétente</h3>
-        <p>Si vous n'êtes pas satisfait de notre réponse, vous avez le droit de déposer une plainte auprès de l'autorité mauricienne de protection des données :</p>
-        <div class="privacy-info-box">
-          <p><strong>Data Protection Office</strong></p>
-          <p>Level 5, Alexander House, 35 Cybercity, Ebene, Mauritius</p>
-          <p>Email : dpo@govmu.org</p>
-          <p>Tél : +230 460 5400</p>
-        </div>
-
-        <!-- CONTACT -->
-        <h2>14. Nous contacter</h2>
-        <p>Pour toute question concernant cette politique de confidentialité ou le traitement de vos données personnelles, n'hésitez pas à nous contacter :</p>
-        <div class="privacy-info-box">
-          <p><strong>Travel With Us Ltd</strong></p>
-          <p><strong>Adresse :</strong> Tamarin, Mauritius</p>
-          <p><strong>BRN :</strong> C25225204</p>
-          <p><strong>Email :</strong> <a href="mailto:contact@ouiitravel.com" style="color: var(--brand);">contact@ouiitravel.com</a></p>
-          <p><strong>Téléphone :</strong> <a href="tel:+23055122352" style="color: var(--brand);">+230 5512 2352</a></p>
-          <p><strong>WhatsApp :</strong> <a href="https://wa.me/23055122352" target="_blank" style="color: var(--brand);">+230 5512 2352</a></p>
-        </div>
-
-        <div class="privacy-highlight">
-          <p><strong>✅ Engagement :</strong> La protection de vos données personnelles est notre priorité. Nous nous engageons à traiter vos informations de manière responsable, transparente et sécurisée.</p>
-        </div>
-
-        <a href="./index.html" class="privacy-back-btn">
+      <!-- Bouton retour -->
+      <div style="text-align: center;">
+        <a href="index.html" class="back-home">
           <i class="fas fa-arrow-left"></i>
-          <span>Retour à l'accueil</span>
+          <span data-translate="back_home_btn">Retour à l'accueil</span>
         </a>
-
       </div>
+
     </div>
-  </main>
+  </section>
 
   <!-- =================== FOOTER =================== -->
   <footer class="site-footer">
@@ -634,7 +626,7 @@
         <p class="hashtag">#travelwithus</p>
 
         <div class="footer-contact">
-          <h4 class="footer-title">Contactez-nous</h4>
+          <h4 class="footer-title" data-translate="footer_contact">Contactez-nous</h4>
           <a href="https://wa.me/23055122352" class="footer-link" target="_blank">
             <i class="fab fa-whatsapp"></i> +230 5512 2352
           </a>
@@ -655,32 +647,32 @@
 
       <!-- Colonne 2 -->
       <div class="footer-col">
-        <h4 class="footer-title">Destinations</h4>
+        <h4 class="footer-title" data-translate="footer_destinations">Destinations</h4>
         <ul class="footer-links">
-          <li><a href="./index.html#destinations">Nord - Grand Baie</a></li>
-          <li><a href="./index.html#destinations">Sud - Le Morne</a></li>
-          <li><a href="./index.html#destinations">Est - Belle Mare</a></li>
-          <li><a href="./index.html#destinations">Ouest - Flic-en-Flac</a></li>
-          <li><a href="./index.html#villas">Toutes nos villas</a></li>
+          <li><a href="index.html#destinations" data-translate="footer_north">Nord - Grand Baie</a></li>
+          <li><a href="index.html#destinations" data-translate="footer_south">Sud - Le Morne</a></li>
+          <li><a href="index.html#destinations" data-translate="footer_east">Est - Belle Mare</a></li>
+          <li><a href="index.html#destinations" data-translate="footer_west">Ouest - Flic-en-Flac</a></li>
+          <li><a href="index.html#villas" data-translate="footer_all_villas">Toutes nos villas</a></li>
         </ul>
       </div>
 
       <!-- Colonne 3 -->
       <div class="footer-col">
-        <h4 class="footer-title">Informations</h4>
+        <h4 class="footer-title" data-translate="footer_info">Informations</h4>
         <ul class="footer-links">
-          <li><a href="./index.html#about">À propos</a></li>
-          <li><a href="./index.html#activites">Activités</a></li>
-          <li><a href="./confidentialite.html">Confidentialité</a></li>
-          <li><a href="./mentions-legales.html">Mentions légales</a></li>
-          <li><a href="./aide-faq.html">Aide & FAQ</a></li>
+          <li><a href="index.html#about" data-translate="footer_about">À propos</a></li>
+          <li><a href="index.html#activites" data-translate="footer_activities">Activités</a></li>
+          <li><a href="confidentialite.html" data-translate="footer_privacy">Confidentialité</a></li>
+          <li><a href="mentions-legales.html" data-translate="footer_legal">Mentions légales</a></li>
+          <li><a href="index.html#contact" data-translate="footer_faq">Aide & FAQ</a></li>
         </ul>
       </div>
 
     </div>
 
     <div class="container footer-copyright">
-      © <span id="currentYear"></span> Travel With Us - Tous droits réservés.
+      © <span id="currentYear"></span> Travel With Us LTD - <span data-translate="footer_rights">Tous droits réservés.</span>
     </div>
   </footer>
 
@@ -689,5 +681,10 @@
   </script>
 
   <script src="./assets/js/script.js"></script>
+  
+  <script>
+    // Script spécifique pour la page confidentialité
+    console.log('📄 Page Confidentialité chargée');
+  </script>
 </body>
 </html>
