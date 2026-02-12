@@ -72,7 +72,7 @@
   
   <!-- Page Mentions Légales -->
   <url>
-    <loc>https://travelwithus.mu/mentions-legales.html</loc>
+    <loc>https://ouiitravel.com/mentions-legales.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -80,14 +80,14 @@
   
   <!-- Versions linguistiques -->
   <url>
-    <loc>https://travelwithus.mu/?lang=en</loc>
+    <loc>https://ouiitravel.com/?lang=en</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://travelwithus.mu/?lang=de</loc>
+    <loc>https://ouiitravel.com/?lang=de</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
