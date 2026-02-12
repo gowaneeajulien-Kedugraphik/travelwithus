@@ -4,19 +4,19 @@
   
   <!-- Page d'accueil - Priorité maximale -->
   <url>
-    <loc>https://travelwithus.mu/</loc>
+    <loc>https://ouiitravel.com.mu/</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://travelwithus.mu/assets/images/Logo.webp</image:loc>
+      <image:loc>https://ouiitravel.com/assets/images/Logo.webp</image:loc>
       <image:title>Travel With Us - Location Villa Maurice</image:title>
     </image:image>
   </url>
   
   <!-- Section Villas -->
   <url>
-    <loc>https://travelwithus.mu/#villas</loc>
+    <loc>https://ouiitravel.com/#villas</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -24,7 +24,7 @@
   
   <!-- Section Destinations -->
   <url>
-    <loc>https://travelwithus.mu/#destinations</loc>
+    <loc>https://ouiitravel.com/#destinations</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -32,7 +32,7 @@
   
   <!-- Section Activités -->
   <url>
-    <loc>https://travelwithus.mu/#activites</loc>
+    <loc>https://ouiitravel.com</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -40,7 +40,7 @@
   
   <!-- Section À propos -->
   <url>
-    <loc>https://travelwithus.mu/#about</loc>
+    <loc>https://ouiitravel.com/#about</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -48,7 +48,7 @@
   
   <!-- Section FAQ -->
   <url>
-    <loc>https://travelwithus.mu/#faq</loc>
+    <loc>https://ouiitravel.com/#faq</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -56,7 +56,7 @@
   
   <!-- Section Contact -->
   <url>
-    <loc>https://travelwithus.mu/#contact</loc>
+    <loc>https://ouiitravel.com/#contact</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -64,7 +64,7 @@
   
   <!-- Page Confidentialité -->
   <url>
-    <loc>https://travelwithus.mu/confidentialite.html</loc>
+    <loc>https://ouiitravel.com/confidentialite.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
