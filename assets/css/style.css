@@ -616,15 +616,65 @@ section[id] {
   background: #f5f5f5;
 }
 
-.vc-media img {
+/* ---- Carrousel photos villa ---- */
+.vc-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.vc-slide {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s;
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.4s ease;
+  pointer-events: none;
 }
 
-.villa-card:hover .vc-media img {
+.vc-slide.active {
+  opacity: 1;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.villa-card:hover .vc-slide.active {
   transform: scale(1.08);
+}
+
+.vc-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 5;
+}
+
+.vc-dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.vc-dot:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.vc-dot.active {
+  width: 20px;
+  border-radius: 4px;
+  background: var(--white);
 }
 
 .vc-badge {
@@ -637,6 +687,7 @@ section[id] {
   padding: 6px 12px;
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 6;
 }
 
 .vc-badge-north {

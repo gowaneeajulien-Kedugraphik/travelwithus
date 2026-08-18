@@ -1136,6 +1136,72 @@ class ImageErrorHandler {
   }
 }
 
+// =================== CARROUSEL PHOTOS VILLA ===================
+// Défilement automatique EN CONTINU dès le chargement de la page + dots cliquables (desktop & mobile)
+// Le survol met en pause le défilement le temps de regarder une photo, puis reprend au départ de la souris.
+class VillaCarousel {
+  constructor(card) {
+    this.card = card;
+    this.media = card.querySelector('.vc-media');
+    this.slides = Array.from(card.querySelectorAll('.vc-slide'));
+    this.dots = Array.from(card.querySelectorAll('.vc-dot'));
+    this.current = 0;
+    this.timer = null;
+    this.autoplayDelay = 2500; // ~2.5s entre chaque photo
+    this.init();
+  }
+
+  init() {
+    if (this.slides.length <= 1 || !this.media) return;
+
+    // Navigation manuelle via les dots (fonctionne desktop + mobile/tactile)
+    this.dots.forEach((dot) => {
+      dot.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const index = parseInt(dot.dataset.index, 10);
+        this.goTo(index);
+        this.startAutoplay(); // on relance le cycle à partir de la photo choisie
+      });
+    });
+
+    // Pause au survol (pour laisser le temps de regarder), reprise à la sortie de la souris
+    this.media.addEventListener('mouseenter', () => this.stopAutoplay());
+    this.media.addEventListener('mouseleave', () => this.startAutoplay());
+
+    // Démarrage automatique et continu dès le chargement de la page,
+    // avec un petit décalage aléatoire pour que toutes les cartes ne soient pas synchronisées
+    const initialDelay = Math.floor(Math.random() * 800);
+    setTimeout(() => this.startAutoplay(), initialDelay);
+  }
+
+  goTo(index) {
+    if (index === this.current) return;
+    this.slides[this.current]?.classList.remove('active');
+    this.dots[this.current]?.classList.remove('active');
+    this.current = index;
+    this.slides[this.current]?.classList.add('active');
+    this.dots[this.current]?.classList.add('active');
+  }
+
+  next() {
+    const nextIndex = (this.current + 1) % this.slides.length;
+    this.goTo(nextIndex);
+  }
+
+  startAutoplay() {
+    this.stopAutoplay();
+    this.timer = setInterval(() => this.next(), this.autoplayDelay);
+  }
+
+  stopAutoplay() {
+    if (this.timer) {
+      clearInterval(this.timer);
+      this.timer = null;
+    }
+  }
+}
+
 // =================== WHATSAPP ANALYTICS ===================
 class WhatsAppTracker {
   constructor() {
@@ -1311,7 +1377,7 @@ document.head.appendChild(styles);
 // =================== INITIALISATION ===================
 document.addEventListener('DOMContentLoaded', () => {
   console.log('%c🏝️ TRAVEL WITH US', 'font-size: 24px; font-weight: bold; color: #28b8bd;');
-  console.log('%c✨ Version FINALE avec Confidentialité + Mentions Légales', 'font-size: 14px; color: #9FC8B6;');
+  console.log('%c✨ Version FINALE avec Confidentialité + Mentions Légales + Carrousel Villas', 'font-size: 14px; color: #9FC8B6;');
   console.log('%c📞 WhatsApp: +230 5512 2352', 'font-size: 12px; color: #666;');
   console.log('%c📧 Email: contact@ouiitravel.com', 'font-size: 12px; color: #666;');
 
@@ -1322,6 +1388,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new ScrollAnimations();
   new SmoothScrollLinks();
   new ImageErrorHandler();
+  document.querySelectorAll('.villa-card').forEach(card => new VillaCarousel(card));
   new WhatsAppTracker();
   new FloatingWhatsApp();
   new FormHandler();
@@ -1344,7 +1411,7 @@ window.addEventListener('offline', () => console.warn('⚠️ Connexion perdue')
 
 // =================== EXPORT GLOBAL ===================
 window.TravelWithUs = {
-  version: '10.0.0-FINAL',
+  version: '11.0.0-CAROUSEL',
   config: CONFIG,
   utils: { debounce, smoothScroll },
   translations: TRANSLATIONS
